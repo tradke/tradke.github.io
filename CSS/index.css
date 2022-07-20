@@ -7,6 +7,18 @@ img {
     bottom: 0;
 }
 
+header {
+    height:20vh;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(64,64,64,1) 80%);
+}
+
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
 nav > a {
     display:block;
     color:white;
@@ -19,14 +31,10 @@ nav > a {
                     rgba(255,255,255,0) 100%) 1;
 }
 
-nav {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-}
-
-header {
-    height:20vh;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(64,64,64,1) 80%);
+nav > a:hover {
+    color: teal;
+    border-image: linear-gradient(90deg,
+                    rgba(255,255,255,0) 0%,
+                    rgba(0,128,128,1) 50%,
+                    rgba(255,255,255,0) 100%) 1;
 }
