@@ -1,8 +1,28 @@
 img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    left:24px;
+}
+
+#start {
+    display:flex;
+    flex-direction: row;
+    margin-top:10%;
+    gap: 10%;
+}
+
+img {
+    margin-left: 10%;
+    width: 200px;
+    height:200px;
+}
+
+#start > p {
+    display:block;
+    align-self:flex-end;
+    margin-right:5%;
+}
+
+#elaborate {
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right:10vh;
 }
