@@ -65,9 +65,9 @@ def create_heatmap(dict_date_racecount):
     events = pd.Series(values, index=dti)
 
     # Customize heatmap.
-    grey = '#646464'
+    grey = '#404040'
     title_str = "Races Heatmap"
-    title_args = {"color":"white", "fontsize":36, "y":1.1}
+    title_args = {"color":"white", "fontsize":36, "y":1.05}
     yearlabel_args = {'color': 'white'}
     fig_args = {"facecolor":grey}
     colormap = 'viridis'

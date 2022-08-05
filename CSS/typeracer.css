@@ -16,7 +16,7 @@ p {
     margin-left:5vw;
     margin-right:5vw;
     margin-top:5vh;
-    font-size:32px;
+    font-size:28px;
 }
 
 .intro {
@@ -24,7 +24,29 @@ p {
 }
 
 .intro > img {
+    object-fit: contain;
     width: 50vw;
     height: auto;
-    max-height:31vw;
+}
+
+.calplot {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calplot > img {
+    object-fit: contain;
+    width: 40vw;
+    height: auto;
+    margin-top:8vh;
+    border: 2px solid white;
+    padding:24px;
+    margin-bottom:10vh;
+}
+
+.calplot > p {
+    text-align:center;
+    margin-left:15vw;
+    margin-right:15vw;
 }
