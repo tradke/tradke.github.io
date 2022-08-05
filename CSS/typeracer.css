@@ -1,8 +1,52 @@
-img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.scorebadge {
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+h2 {
+    font-size:64px;
+    text-align:center;
+    margin:48px;
+    margin-top:25vh;
+}
+
+p {
+    display:flex;
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-top:5vh;
+    font-size:28px;
+}
+
+.intro {
+    display:flex;
+}
+
+.intro > img {
+    object-fit: contain;
+    width: 50vw;
+    height: auto;
+}
+
+.calplot {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calplot > img {
+    object-fit: contain;
+    width: 40vw;
+    height: auto;
+    margin-top:8vh;
+    border: 2px solid white;
+    padding:24px;
+    margin-bottom:10vh;
+}
+
+.calplot > p {
+    text-align:center;
+    margin-left:15vw;
+    margin-right:15vw;
 }

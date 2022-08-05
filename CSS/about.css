@@ -4,25 +4,17 @@ img {
 
 #start {
     display:flex;
-    flex-direction: row;
-    margin-top:10%;
-    gap: 10%;
+    align-items: center;
+    flex-direction: column;
 }
 
 img {
-    margin-left: 10%;
+    margin-top:20vh;
     width: 200px;
     height:200px;
 }
 
 #start > p {
-    display:block;
-    align-self:flex-end;
-    margin-right:5%;
-}
-
-#elaborate {
-    margin-top: 10vh;
-    margin-left: 10vh;
-    margin-right:10vh;
+    margin-top:10vh;
+    text-align: center;
 }
