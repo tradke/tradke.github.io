@@ -19,6 +19,17 @@ p {
     font-size:28px;
 }
 
+.scorebadge {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.scorebadge > p {
+    font-size:16px;
+    margin-top:8px;
+}
+
 .intro {
     display:flex;
 }
@@ -29,24 +40,45 @@ p {
     height: auto;
 }
 
-.calplot {
+.activity p {
+    text-align:center;
+    margin-left:15vw;
+    margin-right:15vw;
+}
+
+.racecount {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.flex-hori {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin: 2vh;
+}
+
+.racecount img {
+    display:flex;
+    width:20vw;
+    height:auto;
+    margin: 2vw;
+}
+
+.heatmap {
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.calplot > img {
+.heatmap img {
     object-fit: contain;
     width: 40vw;
     height: auto;
     margin-top:8vh;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     padding:24px;
     margin-bottom:10vh;
 }
 
-.calplot > p {
-    text-align:center;
-    margin-left:15vw;
-    margin-right:15vw;
-}
