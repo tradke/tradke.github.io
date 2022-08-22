@@ -1,7 +1,5 @@
-.scorebadge {
-    display:flex;
-    justify-content:center;
-    margin-top:40px;
+.sectionbreak {
+    margin:15vh;
 }
 
 h2 {
@@ -23,6 +21,7 @@ p {
     display:flex;
     flex-direction:column;
     align-items: center;
+    margin-top:40px;
 }
 
 .scorebadge > p {
@@ -30,6 +29,7 @@ p {
     margin-top:8px;
 }
 
+/*----------- Section: Intro -----------*/
 .intro {
     display:flex;
 }
@@ -40,32 +40,55 @@ p {
     height: auto;
 }
 
-.activity p {
-    text-align:center;
-    margin-left:15vw;
-    margin-right:15vw;
-}
+/*----------- Section: Activity -----------*/
 
+.activity p {
+    font-size:22px;
+    margin-right:2vw;
+    margin-left:1vw;
+    text-align: left;
+}
+/*--- Subsection: racecount ---*/
 .racecount {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
 }
 
-.flex-hori {
+.flex-col {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items:center;
     margin: 2vh;
 }
 
-.racecount img {
+.flex-col > img {
     display:flex;
-    width:20vw;
+    width:25vw;
     height:auto;
-    margin: 2vw;
+    margin-left: 1vw;
 }
 
+/*--- Subsection: marathon ---*/
+.marathon {
+    display:flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.marathon > img {
+    display:flex;
+    width:60vw;
+    height:auto;
+    margin-left:2vw;
+}
+
+.marathon > p > a {
+    /* TODO: FIX HYPERLINK-PARAGRAPH FLOW */
+    display:inline;
+}
+
+/*--- Subsection: heatmap ---*/
 .heatmap {
     display:flex;
     flex-direction: column;
@@ -82,3 +105,4 @@ p {
     margin-bottom:10vh;
 }
 
+/*---------------------------------*/
