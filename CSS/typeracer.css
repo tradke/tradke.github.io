@@ -10,7 +10,6 @@ h2 {
 }
 
 p {
-    display:flex;
     margin-left:5vw;
     margin-right:5vw;
     margin-top:5vh;
@@ -38,6 +37,10 @@ p {
     object-fit: contain;
     width: 50vw;
     height: auto;
+}
+
+p > a:link, a:visited {
+    color:white;
 }
 
 /*----------- Section: Activity -----------*/
@@ -78,21 +81,22 @@ p {
 
 .marathon > img {
     display:flex;
-    width:60vw;
+    width:55vw;
     height:auto;
     margin-left:2vw;
 }
 
-.marathon > p > a {
-    /* TODO: FIX HYPERLINK-PARAGRAPH FLOW */
-    display:inline;
+.marathon > p > span {
+    text-align: center;
+    font-weight:bold;
+    /* TODO: Change Font, Font Size */
 }
 
 /*--- Subsection: heatmap ---*/
 .heatmap {
     display:flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .heatmap img {

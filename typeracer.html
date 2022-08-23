@@ -35,6 +35,8 @@
                 I was already familiar with typeracer, and as soon as I found out I could download my data I knew I wanted to make a project out of it.
                 <br><br>
                 This scatterplot depicts a high-level summary of my progress thus far. The following sections will explore my typeracer activity, individual races, and WPM improvement.
+                <br><br>
+                Lastly, I would like to credit <a href="https://typeracerdata.com/profile?username=tythal">typeracerdata.com</a> for inspiring or simplifying several parts of this project. 
             </p>
             <img src="./images/full-chart.png">
         </section>
@@ -55,27 +57,39 @@
                 <img src="./images/charts/racecount-hour.png">
             </section>
             <p>
-                These charts largely speak for themselves, but there are a few points worth discussing. To preface, the horizontal dotted lines illustrate the average for that time scale. All dates and times were converted from UTC to local, and they account for daylight savings shifts.
+                These charts largely speak for themselves, but there are a few points worth discussing. To preface, the horizontal dotted lines denote the average for that time scale. All dates and times were converted from UTC to local, and they account for daylight savings shifts.
                 <br><br>
                 Activity in 2020 was dramatically less than that of adjacent years. One contributing factor may have been the onset of COVID-19 and the turbulence that followed. I fondly look back on the mass exodus from residence during March 2020, and the delightful mess that ensued for the remainder of that semester.
                 <br><br>
-                The monthly breakdown was the most surprising to me. I have some ideas to justify each month's activity, but June is a mystery to me. It somehow has a grand total of 3 races over the course of 5 years.
+                The monthly breakdown was the most surprising to me. I have some ideas to justify each month's activity, but June is quite the mystery. It somehow has a grand total of 3 races across 5 years.
             </p>
         </section>
 
         <section class="sectionbreak"></section>
 
-        <!-----/* TODO: FIX HYPERLINK-PARAGRAPH FLOW */------->
         <section class="marathon">
             <img src="./images/charts/marathons.png">
-            <p>I would like to credit <a href="https://typeracerdata.com/profile?username=tythal">typeracerdata.com</a> for the idea of marathons; however, I took a slightly different approach.
+            <p>
+                I chose to define marathon as the number of races completed in a single calendar day.
+                <br><br>
+                This metric was inspired by typeracerdata.com, although I opted to modify the measure. Typeracerdata.com defines a marathon as the number of races completed in any 24 hour block. This allows your marathon to bridge adjacent calendar days. As such, their metric found my top marathon to be
+                    <span>
+                        121 races in 24 hours, starting 2021 November 29, 9:23pm.
+                    </span>
+                Each approach is valid and conveys similar but slightly different information.
+                <br><br>
+                Measuring marathons by calendar day is easy and simple to grasp, but it fails to incorporate any races after midnight. From the chart above, Race Count by Hour, we can see that I completed a similar number of races between [11:00, 12:00) and [12:00, 1:00), but these adjacent groups are counted separately despite their contiguous nature.
+                <br><br>
+                Counting any 24-hour block resolves this problem, but a different kind of behaviour arises. Notice my top marathon from typeracerdata.com begins at 9:23pm. This marathon begins with heavy activity at night, zero activity while I slept, and high activity from the afternoon and evening the following day. It is a perfectly valid approach, but it troubles the concept of "marathon" unless you are familiar with how they define it.
+                <br><br>
+                Perhaps a better approach, given what we know about this data, would require defining a "marathon day" that lasts 24 hours and begins at 5:00am. This regularly separates race activity (as seen in the Race Count by Hour figure) while maintaining the essence of a marathon.
             </p>
         </section>
 
-        <!------------>
+        <section class="sectionbreak"></section>
 
         <section class="heatmap">
-            <p>~calendar heatmap~</p>
+            <img src="./images/charts/scatter-full-colorcoded.png">
             <img src="./images/heatmap_cb.png">
         </section>
 
