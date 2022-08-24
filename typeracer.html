@@ -47,6 +47,7 @@
     <section class="activity">
         <h2>Activity</h2>
 
+        <!-- subsection: racecount -->
         <section class="racecount">
             <section class="flex-col">
                 <img src="./images/charts/racecount-year.png">
@@ -64,9 +65,9 @@
                 The monthly breakdown was the most surprising to me. I have some ideas to justify each month's activity, but June is quite the mystery. It somehow has a grand total of 3 races across 5 years.
             </p>
         </section>
-
         <section class="sectionbreak"></section>
 
+        <!-- subsection: racecount -->
         <section class="marathon">
             <img src="./images/charts/marathons.png">
             <p>
@@ -78,17 +79,17 @@
                     </span>
                 Each approach is valid and conveys similar but slightly different information.
                 <br><br>
-                Measuring marathons by calendar day is easy and simple to grasp, but it fails to incorporate any races after midnight. From the chart above, Race Count by Hour, we can see that I completed a similar number of races between [11:00, 12:00) and [12:00, 1:00), but these adjacent groups are counted separately despite their contiguous nature.
+                Measuring marathons by calendar day is easy and simple to grasp, but it fails to incorporate any races after midnight. From the chart above, Race Count by Hour, we can see that I completed a similar number of races between [11:00, 12:00) and [12:00, 1:00), but these adjacent groups are counted separately despite them being contiguous.
                 <br><br>
                 Counting any 24-hour block resolves this problem, but a different kind of behaviour arises. Notice my top marathon from typeracerdata.com begins at 9:23pm. This marathon begins with heavy activity at night, zero activity while I slept, and high activity from the afternoon and evening the following day. It is a perfectly valid approach, but it troubles the concept of "marathon" unless you are familiar with how they define it.
                 <br><br>
                 Perhaps a better approach, given what we know about this data, would require defining a "marathon day" that lasts 24 hours and begins at 5:00am. This regularly separates race activity (as seen in the Race Count by Hour figure) while maintaining the essence of a marathon.
             </p>
         </section>
-
         <section class="sectionbreak"></section>
 
-        <section class="heatmap">
+        <!-- subsection: activedays -->
+        <section class="activedays">
             <img src="./images/charts/scatter-full-colorcoded.png">
             <img src="./images/heatmap_cb.png">
         </section>

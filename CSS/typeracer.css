@@ -92,14 +92,14 @@ p > a:link, a:visited {
     /* TODO: Change Font, Font Size */
 }
 
-/*--- Subsection: heatmap ---*/
-.heatmap {
+/*--- Subsection: activedays ---*/
+.activedays {
     display:flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.heatmap img {
+.activedays img {
     object-fit: contain;
     width: 40vw;
     height: auto;
