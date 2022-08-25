@@ -12,7 +12,6 @@ h2 {
 p {
     margin-left:5vw;
     margin-right:5vw;
-    margin-top:5vh;
     font-size:28px;
 }
 
@@ -96,17 +95,78 @@ p > a:link, a:visited {
 .activedays {
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.activedays img {
+.activedays-col {
+    display:flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-size:32px;
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-bottom:5vh;
+    text-align:center;
+}
+
+.blank_row {
+    height: 44px;
+}
+
+table {
+    display:flex;
+    align-self:center;
+}
+
+.activedays table td {
+    text-align:right;
+}
+.activedays table td + td {
+    text-align:center;
+    padding-left:32px;
+    padding-right:32px;
+}
+.activedays table td + td + td {
+    text-align:left;
+    padding-left:0px;
+}
+
+.activedays-col > p {
+    margin-top: 48px;
+    margin-left: 5vw;
+    text-align:left;
+}
+
+.activedays ul {
+    list-style-type: circle;
+    margin-left:5vw;
+    margin-top:5vh;
+}
+
+.activedays li {
+    margin: 24px;
+    font-size:22px;
+}
+
+#heatmap {
     object-fit: contain;
     width: 40vw;
     height: auto;
-    margin-top:8vh;
     /*border: 2px solid white;*/
     padding:24px;
-    margin-bottom:10vh;
+    margin-right:5vw;
 }
+
+.activedays img {
+    width: 30vw;
+    height:auto;
+    margin-right: 5vw;
+    align-self: center;
+}
+
+
+
 
 /*---------------------------------*/
