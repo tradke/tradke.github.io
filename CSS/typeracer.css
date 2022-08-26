@@ -1,4 +1,4 @@
-.sectionbreak {
+.section-break {
     margin:15vh;
 }
 
@@ -7,6 +7,7 @@ h2 {
     text-align:center;
     margin:48px;
     margin-top:25vh;
+    margin-bottom:12vh;
 }
 
 p {
@@ -15,21 +16,26 @@ p {
     font-size:28px;
 }
 
-.scorebadge {
+.score-badge {
     display:flex;
     flex-direction:column;
     align-items: center;
     margin-top:40px;
 }
 
-.scorebadge > p {
+.score-badge > p {
     font-size:16px;
     margin-top:8px;
+}
+
+p > a:link, a:visited {
+    color:white;
 }
 
 /*----------- Section: Intro -----------*/
 .intro {
     display:flex;
+    align-items:center;
 }
 
 .intro > img {
@@ -38,12 +44,7 @@ p {
     height: auto;
 }
 
-p > a:link, a:visited {
-    color:white;
-}
-
 /*----------- Section: Activity -----------*/
-
 .activity p {
     font-size:22px;
     margin-right:2vw;
@@ -51,7 +52,7 @@ p > a:link, a:visited {
     text-align: left;
 }
 /*--- Subsection: racecount ---*/
-.racecount {
+.race-count {
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -91,14 +92,14 @@ p > a:link, a:visited {
     /* TODO: Change Font, Font Size */
 }
 
-/*--- Subsection: activedays ---*/
-.activedays {
+/*--- Subsection: active-days ---*/
+.active-days {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.activedays-col {
+.active-days-col {
     display:flex;
     flex-direction: column;
 }
@@ -111,62 +112,102 @@ h4 {
     text-align:center;
 }
 
-.blank_row {
+.blank-row {
     height: 44px;
 }
 
 table {
     display:flex;
     align-self:center;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
 }
 
-.activedays table td {
+.active-days table td {
     text-align:right;
+    font-weight: bold;
 }
-.activedays table td + td {
+.active-days table td + td {
     text-align:center;
     padding-left:32px;
     padding-right:32px;
 }
-.activedays table td + td + td {
+.active-days table td + td + td {
     text-align:left;
     padding-left:0px;
 }
 
-.activedays-col > p {
+.active-days-col > p {
     margin-top: 48px;
     margin-left: 5vw;
     text-align:left;
 }
 
-.activedays ul {
+.active-days ul {
     list-style-type: circle;
     margin-left:5vw;
     margin-top:5vh;
 }
 
-.activedays li {
+.active-days li {
     margin: 24px;
-    font-size:22px;
+    font-size:20px;
 }
 
 #heatmap {
-    object-fit: contain;
     width: 40vw;
     height: auto;
-    /*border: 2px solid white;*/
-    padding:24px;
     margin-right:5vw;
+    margin-bottom:64px;
 }
 
-.activedays img {
+.active-days img {
     width: 30vw;
     height:auto;
     margin-right: 5vw;
     align-self: center;
 }
-
-
-
-
 /*---------------------------------*/
+
+/*----------- Section: Common Races -----------*/
+
+/* ---- subsection: cr-intro ---- */
+.cr-intro {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.cr-intro > p {
+    font-size:22px;
+}
+
+.cr-flex-col {
+    display:flex;
+    flex-direction:column;
+}
+
+.cr-intro img {
+    width: 22vw;
+    height:auto;
+    margin-right:2vw;
+}
+
+/* ---- subsection: cr-freq-texts ---- */
+.cr-freq-texts {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cr-freq-texts img {
+    width:30vw;
+    height:auto;
+}
+
+.text-quote {
+    font-style: italic;
+    max-width:35vw;
+    font-size:20px;
+}
