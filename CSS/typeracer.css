@@ -116,7 +116,7 @@ h4 {
     height: 44px;
 }
 
-table {
+.active-days-col table {
     display:flex;
     align-self:center;
     border-top:2px solid white;
@@ -193,21 +193,36 @@ table {
     margin-right:2vw;
 }
 
-/* ---- subsection: cr-freq-texts ---- */
-.cr-freq-texts {
+/* ---- subsection: sample quotes ---- */
+.sample-quote {
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-.cr-freq-texts img {
-    width:30vw;
-    height:auto;
+    margin-bottom:5vh;
 }
 
 .text-quote {
     font-style: italic;
-    max-width:35vw;
+    width:25vw;
     font-size:20px;
+    background-color: black;
+    border-radius:12px;
+    padding:24px;
+    border:1px solid white;
+
+    margin:0px;
+}
+
+.sample-quote img {
+    width:25vw;
+    height:auto;
+    margin:0px;
+}
+
+.quote-stats-container {
+    padding:12px;
+    background-color: black;
+    border:1px solid white;
+    border-radius:12px;
 }
