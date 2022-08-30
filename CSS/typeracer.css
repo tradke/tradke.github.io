@@ -1,7 +1,5 @@
-.scorebadge {
-    display:flex;
-    justify-content:center;
-    margin-top:40px;
+.section-break {
+    margin:15vh;
 }
 
 h2 {
@@ -9,18 +7,35 @@ h2 {
     text-align:center;
     margin:48px;
     margin-top:25vh;
+    margin-bottom:12vh;
 }
 
 p {
-    display:flex;
     margin-left:5vw;
     margin-right:5vw;
-    margin-top:5vh;
     font-size:28px;
 }
 
+.score-badge {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top:40px;
+}
+
+.score-badge > p {
+    font-size:16px;
+    margin-top:8px;
+}
+
+p > a:link, a:visited {
+    color:white;
+}
+
+/*----------- Section: Intro -----------*/
 .intro {
     display:flex;
+    align-items:center;
 }
 
 .intro > img {
@@ -29,24 +44,185 @@ p {
     height: auto;
 }
 
-.calplot {
+/*----------- Section: Activity -----------*/
+.activity p {
+    font-size:22px;
+    margin-right:2vw;
+    margin-left:1vw;
+    text-align: left;
+}
+/*--- Subsection: racecount ---*/
+.race-count {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.flex-col {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin: 2vh;
+}
+
+.flex-col > img {
+    display:flex;
+    width:25vw;
+    height:auto;
+    margin-left: 1vw;
+}
+
+/*--- Subsection: marathon ---*/
+.marathon {
+    display:flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.marathon > img {
+    display:flex;
+    max-width:55vw;
+    height:auto;
+    margin-left:2vw;
+}
+
+.marathon > p > span {
+    text-align: center;
+    font-weight:bold;
+    /* TODO: Change Font, Font Size */
+}
+
+/*--- Subsection: active-days ---*/
+.active-days {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.active-days-col {
     display:flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.calplot > img {
-    object-fit: contain;
+h4 {
+    font-size:32px;
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-bottom:5vh;
+    text-align:center;
+}
+
+.blank-row {
+    height: 44px;
+}
+
+.active-days-col table {
+    display:flex;
+    align-self:center;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+}
+
+.active-days table td {
+    text-align:right;
+    font-weight: bold;
+}
+.active-days table td + td {
+    text-align:center;
+    padding-left:32px;
+    padding-right:32px;
+}
+.active-days table td + td + td {
+    text-align:left;
+    padding-left:0px;
+}
+
+.active-days-col > p {
+    margin-top: 48px;
+    margin-left: 5vw;
+    text-align:left;
+}
+
+.active-days ul {
+    list-style-type: circle;
+    margin-left:5vw;
+    margin-top:5vh;
+}
+
+.active-days li {
+    margin: 24px;
+    font-size:20px;
+}
+
+#heatmap {
     width: 40vw;
     height: auto;
-    margin-top:8vh;
-    border: 2px solid white;
-    padding:24px;
-    margin-bottom:10vh;
+    margin-right:5vw;
+    margin-bottom:64px;
 }
 
-.calplot > p {
-    text-align:center;
-    margin-left:15vw;
-    margin-right:15vw;
+.active-days img {
+    width: 30vw;
+    height:auto;
+    margin-right: 5vw;
+    align-self: center;
+}
+/*---------------------------------*/
+
+/*----------- Section: Common Races -----------*/
+
+/* ---- subsection: cr-intro ---- */
+.cr-intro {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.cr-intro > p {
+    font-size:22px;
+}
+
+.cr-flex-col {
+    display:flex;
+    flex-direction:column;
+}
+
+.cr-intro img {
+    width: 22vw;
+    height:auto;
+    margin-right:2vw;
+}
+
+/* ---- subsection: sample quotes ---- */
+.sample-quote {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:5vh;
+}
+
+.text-quote {
+    font-style: italic;
+    width:25vw;
+    font-size:20px;
+    background-color: black;
+    border-radius:12px;
+    padding:24px;
+    border:1px solid white;
+
+    margin:0px;
+}
+
+.sample-quote img {
+    width:25vw;
+    height:auto;
+    margin:0px;
+}
+
+.quote-stats-container {
+    padding:12px;
+    background-color: black;
+    border:1px solid white;
+    border-radius:12px;
 }
