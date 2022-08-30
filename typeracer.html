@@ -23,7 +23,7 @@
         <a href="https://data.typeracer.com/pit/profile?user=tythal&ref=badge">
             <img src="./images/typeracer-profile-summary.png" alt="Typeracer Score Card"/>
         </a>
-        <p>Aug. 24, 2022</p>
+        <p>Aug. 29, 2022</p>
     </section>
 
     <!-- Section: Introduction-->
@@ -34,7 +34,7 @@
             <p>During the summer of 2018 I decided to train myself on "proper" touch typing.
                 I was already familiar with typeracer, and as soon as I found out I could download my data I knew I wanted to make a project out of it.
                 <br><br>
-                This scatterplot depicts a high-level summary of my progress thus far. The following sections will explore my typeracer activity, individual races, and WPM improvement.
+                This scatterplot depicts a high-level summary of my progress thus far. The following sections will explore my typeracer activity, individual races, and WPM improvement (TODO).
                 <br><br>
                 Lastly, I would like to credit <a href="https://typeracerdata.com/profile?username=tythal">typeracerdata.com</a> for inspiring or simplifying several parts of this project. 
             </p>
@@ -198,11 +198,13 @@
                 <br><br>
                 Standard universes for many languages exist. Additionally, there are dozens of topical or niche universes such as Dictionary, Jokes, Lord of the Rings, Copypasta, and more. Once again, typeracerdata.com is a tremendous resource for all this information. You can find a list of popular universes <a href="https://typeracerdata.com/universes">here</a>.
                 <br><br>
-                I almost exclusive play in the default english universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2857 unique text ids. Consequently, I have experienced about 28% of this universe.
+                I almost exclusive play in the default english universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2857 unique text ids. Consequently, I have experienced about 38.5% of this universe.
                 <br><br>
-                ~~This <a href="https://typeracer.wordpress.com/2017/08/27/typeracer-reaches-3700-quotes-how-many-have-you-typed/">blog post</a> from 2017 suggests each skill level may encounter only a subset of these texts (playing naturally). Without further information, I had to make some simplyfing assumptions in my analysis.~~
+                There were 2857 unique text ids among 4567 total races. Roughly speaking, 1/3rd of my races were on quotes I have raced before, and 2/3rds were completely novel.
                 <br><br>
-                ~~~~~ TODO: FINISH SUBSECTION. SEGWAY INTO NEXT SECT. ~~~~~
+                The bar chart illustrates: among 2857 unique quotes, 1683 of them were raced exactly one time. 785 of them were raced exactly twice, and so on. The most frequently encountered quote was actually a tie - both quotes having been raced 6 times each each.
+                <br><br>
+                The next section reports on some of my most encountered races. Including the race script, a figure plotting race outcomes, and some light stats.
             </p>
 
             <section class="cr-flex-col">
@@ -218,16 +220,74 @@
 
         <!-- subsection: sample quotes -->
         <section class="sample-quotes-container">
+
             <section class="sample-quote">
-                <p class="text-quote">It is now time to make it unclear. To write off lines that don't make sense. I love myself better than you. I know it's wrong so what should I do? And one more special message to go, and then I'm done, and I can go home. I love myself better than you. I know it's wrong so what should I do?
+                <p class="text-quote">
+                    It is now time to make it unclear. To write off lines that don't make sense. I love myself better than you. I know it's wrong so what should I do? And one more special message to go, and then I'm done, and I can go home. I love myself better than you. I know it's wrong so what should I do?
                     <br><br>
-                    - On a Plain by Nirvana
+                    - On a Plain (song) by Nirvana
                 </p>
     
-                <img src="./images/charts/line-text-3550811.png">
+                <img src="./images/charts/text-ids/3550811-line.png">
     
                 <section class="quote-stats-container">
-                    <img src="./images/charts/line-text-3550811.png">
+                    <img src="./images/charts/text-ids/3550811-stats.png">
+                </section>
+            </section>
+
+            <section class="sample-quote">
+                <p class="text-quote">
+                    There is some love that will not go away. You're here, there's nothing I fear and I know that my heart will go on. We'll stay forever this way, you are safe in my heart.
+                    <br><br>
+                    - My Heart Will Go On (song) by Céline Dion
+                </p>
+    
+                <img src="./images/charts/text-ids/3640264-line.png">
+    
+                <section class="quote-stats-container">
+                    <img src="./images/charts/text-ids/3640264-stats.png">
+                </section>
+            </section>
+
+            <section class="sample-quote">
+                <p class="text-quote">
+                    There's sometimes a buggy. How many drivers does a buggy have? So, let's just say I'm driving this buggy, and if you fix your attitude, you can ride along with me. Now you will see me one more time, if you do good. You will see me two more times, if you do bad.
+                    <br><br>
+                    - Mulholland Drive (movie) by David Lynch
+                </p>
+    
+                <img src="./images/charts/text-ids/76-line.png">
+    
+                <section class="quote-stats-container">
+                    <img src="./images/charts/text-ids/76-stats.png">
+                </section>
+            </section>
+
+            <section class="sample-quote">
+                <p class="text-quote">
+                    Every craft and every investigation, and likewise every action and decision, seems to aim at some good; hence the good has been well described as that at which everything aims. However, there is an apparent difference among the ends aimed at. For the end is sometimes an activity, sometimes a product beyond the activity; and when there is an end beyond the action, the product is by nature better than the activity.
+                    <br><br>
+                    - Aristotle: Introductory Readings (book) by Aristotle
+                </p>
+    
+                <img src="./images/charts/text-ids/437-line.png">
+    
+                <section class="quote-stats-container">
+                    <img src="./images/charts/text-ids/437-stats.png">
+                </section>
+            </section>
+
+            <section class="sample-quote">
+                <p class="text-quote">
+                    It seems to me you lived your life like a candle in the wind, never knowing who to cling to when the rain set in. And I would have liked to have known you but I was just a kid.
+                    <br><br>
+                    - Candle In The Wind (song) by Elton John
+                </p>
+    
+                <img src="./images/charts/text-ids/3640134-line.png">
+    
+                <section class="quote-stats-container">
+                    <img src="./images/charts/text-ids/3640134-stats.png">
                 </section>
             </section>
 

@@ -81,7 +81,7 @@ p > a:link, a:visited {
 
 .marathon > img {
     display:flex;
-    width:55vw;
+    max-width:55vw;
     height:auto;
     margin-left:2vw;
 }
