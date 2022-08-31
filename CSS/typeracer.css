@@ -75,13 +75,13 @@ p > a:link, a:visited {
 /*--- Subsection: marathon ---*/
 .marathon {
     display:flex;
-    justify-content: left;
     flex-direction: row;
+    align-items:center;
 }
 
 .marathon > img {
-    display:flex;
-    max-width:55vw;
+    object-fit: contain;
+    width:55vw;
     height:auto;
     margin-left:2vw;
 }
@@ -96,7 +96,8 @@ p > a:link, a:visited {
 .active-days {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items:center;
 }
 
 .active-days-col {
@@ -113,7 +114,7 @@ h4 {
 }
 
 .blank-row {
-    height: 44px;
+    height: 36px;
 }
 
 .active-days-col table {
@@ -126,11 +127,12 @@ h4 {
 .active-days table td {
     text-align:right;
     font-weight: bold;
+    font-size:26px;
 }
 .active-days table td + td {
     text-align:center;
-    padding-left:32px;
-    padding-right:32px;
+    padding-left:24px;
+    padding-right:24px;
 }
 .active-days table td + td + td {
     text-align:left;
@@ -162,7 +164,7 @@ h4 {
 }
 
 .active-days img {
-    width: 30vw;
+    width: 25vw;
     height:auto;
     margin-right: 5vw;
     align-self: center;
