@@ -16,6 +16,47 @@ p {
     font-size:28px;
 }
 
+p > a:link, a:visited {
+    color:white;
+}
+
+/* ----- Navigation ----- */
+nav > a {
+    display:block;
+    padding:8px;
+    text-align:center;
+
+    background-color: #404040;
+    border: 1px solid white;
+    border-radius:8px;
+
+    text-decoration: none;
+    color:white;
+}
+
+#btt-button {
+    position:fixed;
+    top:12px;
+    right:12px;
+    max-width:48px;
+    font-size:16px;
+}
+
+#return-home {
+    position:absolute;
+    top:24px;
+    left:24px;
+    font-size:24px;
+}
+
+#top {
+    position:absolute;
+    top:0;
+    left:0;
+    border:none;
+}
+
+/* ----- Score Badge ----- */
 .score-badge {
     display:flex;
     flex-direction:column;
@@ -26,10 +67,6 @@ p {
 .score-badge > p {
     font-size:16px;
     margin-top:8px;
-}
-
-p > a:link, a:visited {
-    color:white;
 }
 
 /*----------- JS Collapsible Sections -----------*/
@@ -45,12 +82,17 @@ p > a:link, a:visited {
     transition: max-height 0.4s ease;
 }
 
-
 /*----------- Section: Intro -----------*/
 .intro {
     display:flex;
     align-items:center;
 }
+
+/*
+#intro-collapse {
+    max-height:fit-content;
+}
+*/
 
 .intro > img {
     object-fit: contain;
