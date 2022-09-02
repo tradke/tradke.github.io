@@ -50,29 +50,26 @@ table {
 /* #endregion */
 
 body {
-    background-color: rgba(64, 64, 64, 1);
+    background-color: #404040;
     font-size: 32px;
     color:white;
 }
 
 h1 {
     font-size:96px;
+    font-family:"Bitter";
+    font-weight:400;
     text-align:center;
     margin-top:48px;
 }
 
-nav > a:link {
-    text-decoration: none;
+p, a, li, td {
+    font-family:"Lexend Deca";
+    font-weight:200;
 }
-  
-nav > a:visited {
-    text-decoration: none;
-}
-  
-nav > a:hover {
-    text-decoration: none;
-}
-  
-nav > a:active {
-    text-decoration: none;
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: underline;
+    text-decoration-thickness:1px;
+    color:white;
 }
