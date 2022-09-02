@@ -1,28 +1,33 @@
-img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-header {
-    height:20vh;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(64,64,64,1) 80%);
+.content {
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
 }
 
 nav {
     display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right:12vw;
 }
 
-nav > a {
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a {
     display:block;
+    width:fit-content;
     color:white;
-    margin-top:2vh;
+    margin:2vh;
+    margin-bottom:8vh;
+    font-size:48px;
+
+    padding-left:20px;
+    padding-right:20px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-image: linear-gradient(90deg,
@@ -31,10 +36,10 @@ nav > a {
                     rgba(255,255,255,0) 100%) 1;
 }
 
-nav > a:hover {
-    color: teal;
+a:hover {
+    color: #2D9DFF;
     border-image: linear-gradient(90deg,
                     rgba(255,255,255,0) 0%,
-                    rgba(0,128,128,1) 50%,
+                    #2D9DFF 50%,
                     rgba(255,255,255,0) 100%) 1;
 }

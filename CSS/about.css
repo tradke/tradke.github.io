@@ -1,20 +1,50 @@
-img {
+#return-home {
+    position:absolute;
+    top:24px;
     left:24px;
+    font-size:24px;
+    text-decoration:none;
+
+    display:block;
+    padding:8px;
+    text-align:center;
+    background-color: #404040;
+    border: 1px solid white;
+    border-radius:8px;
 }
 
-#start {
+.content {
+    height:100vh;
     display:flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
 }
 
-img {
-    margin-top:20vh;
-    width: 200px;
-    height:200px;
+.content p {
+    max-width:35vw;
+    font-size:26px;
+    font-family:"Lexend Deca";
+    font-weight:200;
 }
 
-#start > p {
-    margin-top:10vh;
-    text-align: center;
+.picture {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:40vw;
+}
+
+.content img {
+    width:270px;
+    height:270px;
+}
+
+.picture span {
+    display:block;
+    text-align:center;
+    margin-top:16px;
+    font-size:16px;
+    font-family:"Lexend Deca";
+    font-weight:200;
 }
