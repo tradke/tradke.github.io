@@ -62,9 +62,13 @@ nav > a {
     margin-top:40px;
 }
 
-.score-badge > p {
+.score-badge p {
     font-size:16px;
     margin-top:8px;
+}
+
+.score-badge img {
+    border:3px solid white;
 }
 
 /*----------- JS Collapsible Sections -----------*/
