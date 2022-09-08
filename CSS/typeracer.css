@@ -2,6 +2,11 @@
     height:10vh;
 }
 
+h1 {
+    letter-spacing:3px;
+    word-spacing:15px;
+}
+
 h2 {
     font-size:64px;
     font-family:"Bitter";
@@ -62,9 +67,13 @@ nav > a {
     margin-top:40px;
 }
 
-.score-badge > p {
+.score-badge p {
     font-size:16px;
     margin-top:8px;
+}
+
+.score-badge img {
+    border:3px solid white;
 }
 
 /*----------- JS Collapsible Sections -----------*/
@@ -86,16 +95,15 @@ nav > a {
     align-items:center;
 }
 
-/*
-#intro-collapse {
-    max-height:fit-content;
-}
-*/
-
 .intro > img {
     object-fit: contain;
     width: 50vw;
     height: auto;
+    margin-right:3vw;
+}
+
+.intro p {
+    font-size: 24px;
 }
 
 /*----------- Section: Activity -----------*/
@@ -140,10 +148,12 @@ nav > a {
     margin-left:2vw;
 }
 
+.marathon p {
+    font-size: 20px;
+}
+
 .marathon > p > span {
-    text-align: center;
     font-weight:bold;
-    /* TODO: Change Font, Font Size */
 }
 
 /*--- Subsection: active-days ---*/
@@ -232,12 +242,21 @@ h4 {
 /* ---- subsection: cr-intro ---- */
 .cr-intro {
     display:flex;
-    flex-direction:row;
-    align-items:center;
+    flex-direction:column;
 }
 
-.cr-intro > p {
+.cr-intro p {
     font-size:22px;
+    max-width:60vw;
+}
+
+.cr-flex-col p {
+    text-align: center;
+    align-self:center;
+}
+
+.cr-flex-col span {
+    font-weight:bold;
 }
 
 .cr-flex-col {
@@ -245,10 +264,22 @@ h4 {
     flex-direction:column;
 }
 
-.cr-intro img {
-    width: 22vw;
+.cr-flex-row {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.cr-flex-row img {
+    width: 25vw;
     height:auto;
-    margin-right:2vw;
+    margin-bottom:6vh;
+}
+
+#cr-pie {
+    width:20vw;
+    height:auto;
 }
 
 /* ---- subsection: sample quotes ---- */
@@ -266,7 +297,7 @@ h4 {
     font-style: italic;
     width:25vw;
     font-size:20px;
-    background-color: black;
+    background-color: #404040;
     border-radius:12px;
     padding:24px;
     border:1px solid white;
@@ -280,8 +311,28 @@ h4 {
 }
 
 .quote-stats-container {
-    padding:12px;
-    background-color: black;
+    padding:6px;
+    background-color: #404040;
     border:1px solid white;
     border-radius:12px;
+}
+
+.quote-stats-container img {
+    width:20vw;
+}
+
+
+/*---------------------------------*/
+
+/*----------- Section: WPM -----------*/
+.wpm-intro {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.wpm-intro img {
+    width:10vw;
+    height:10vw;
+    align-self:center;
 }

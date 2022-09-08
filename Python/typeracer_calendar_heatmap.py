@@ -31,8 +31,8 @@ def csv_extract():
     """
 
     # Set filename and the column number of date.
-    filename = 'race-date-time.csv'
-    col = 1
+    filename = './Python/race-date-time.csv'
+    col = 0
 
     # Load csv data into dictionary.
     dict_date_racecount = {}
@@ -89,7 +89,7 @@ def create_heatmap(dict_date_racecount):
         ax.set_yticklabels(["Mon","","","","","",""],color='w')
     
     # Save Figure.
-    fig.savefig("./figs/heatmap.png", bbox_inches="tight", transparent=False)
+    fig.savefig('./Python/figs/heatmap.svg', bbox_inches="tight", transparent=False)
 
     return
 
