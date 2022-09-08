@@ -30,12 +30,12 @@
         <a href="https://data.typeracer.com/pit/profile?user=tythal&ref=badge">
             <img src="./images/typeracer-profile-summary.png" alt="Typeracer Score Card"/>
         </a>
-        <p>Sep. 6, 2022</p>
+        <p>Sep. 7, 2022</p>
         <section class="section-break"></section>
     </section>
     
 
-    <!-- Section: Introduction-->
+    <!--------- Section: Introduction--------->
     <section>
         <h2 class="collapsible-button">Introduction</h2>
 
@@ -49,14 +49,14 @@
                     <br><br>
                     This project was multipurpose. It let me reflect on my progress which is an important step in further improvement. Moreover, it gave me an opportunity to dig my teeth into Excel (where most of the stats and charts were created). Lastly, I would like to credit <a href="https://typeracerdata.com/profile?username=tythal">typeracerdata.com</a> for inspiring or simplifying several parts of this project. 
                 </p>
-                <img src="./images/charts/scatter-full-colorcoded.png">
+                <img src="./images/charts/scatter-full-colorcoded.svg">
             </section>
             <section class="section-break"></section>
         </section>
     </section>
 
 
-    <!-- Section: Activity -->
+    <!--------- Section: Activity --------->
     <section class="activity">
         <h2 class="collapsible-button">Activity</h2>
 
@@ -65,39 +65,37 @@
             <!-- subsection: race-count -->
             <section class="race-count">
                 <section class="flex-col">
-                    <img src="./images/charts/race-count-year.png">
-                    <img src="./images/charts/race-count-day.png">
+                    <img src="./images/charts/race-count-year.svg">
+                    <img src="./images/charts/race-count-day.svg">
                 </section>
                 <section class="flex-col">
-                    <img src="./images/charts/race-count-month.png">
-                    <img src="./images/charts/race-count-hour.png">
+                    <img src="./images/charts/race-count-month.svg">
+                    <img src="./images/charts/race-count-hour.svg">
                 </section>
                 <p>
-                    These charts largely speak for themselves, but there are a few points worth discussing. To preface, the horizontal dotted lines denote the average for that time scale. All dates and times were converted from UTC to local, and they account for daylight savings shifts.
+                    These charts largely speak for themselves, but there are a few points worth discussing. To preface, the horizontal dotted lines denote the average for that time scale. All dates and times were converted from UTC to local (MT), and they account for daylight savings shifts.
                     <br><br>
-                    Activity in 2020 was dramatically less than that of adjacent years. One contributing factor may have been the onset of COVID-19 and the turbulence that followed. I fondly look back on the mass exodus from residence during March 2020, and the delightful mess that ensued for the remainder of that semester.
+                    Activity in 2020 was dramatically less than that of adjacent years. One contributing factor was undoubtedly the onset of COVID-19 (and the related restrictions) in Canada. I suppose my increased screen time dampened my motivation to continue this hobby.
                     <br><br>
-                    The monthly breakdown was the most surprising to me. I have some ideas to justify each month's activity, but June is quite the mystery. It somehow has a grand total of 3 races across 5 years.
+                    Besides the excessive activity on Mondays, the daily breakdown was remarkably even.
                     <br><br>
-                    Despite the curiously excessive activity on Mondays, the daily breakdown was remarkably even.
+                    The monthly breakdown was the most surprising to me. I have some ideas to justify each month's activity, but June is quite the mystery. It somehow has a grand total of 3 races across 5 years. It is the greatest outlier of this entire project.
                 </p>
             </section>
             <section class="section-break"></section>
 
             <!-- subsection: marathon -->
             <section class="marathon">
-                <img src="./images/charts/marathons.png">
+                <img src="./images/charts/marathons.svg">
                 <p>
                     I chose to define marathon as the number of races completed in a single calendar day.
                     <br><br>
-                    This metric was inspired by typeracerdata.com, although I opted to modify the measure. Typeracerdata.com defines a marathon as the number of races completed in any 24 hour block. This allows your marathon to bridge adjacent calendar days. As such, their metric found my top marathon to be
+                    This metric was inspired by typeracerdata.com. They define a marathon as the number of races completed in any 24 hour block. This allows your marathon to bridge adjacent calendar days. As such, their definition found my top marathon to be
                         <span>
                             121 races in 24 hours, starting 2021 November 29, 9:23pm.
                         </span>
                     <br><br>
-                    Measuring marathons by calendar day is easy and simple to grasp, but it fails to incorporate any races after midnight. From the chart above, Race Count by Hour, we can see that I completed a similar number of races between [11:00, 12:00) and [12:00, 1:00), but these groups are counted separately despite being contiguous.
-                    <br><br>
-                    Counting any 24-hour block resolves this problem, but a different kind of behaviour arises. Notice my top marathon from typeracerdata.com begins at 9:23pm. This marathon begins with heavy activity at night, zero activity while I slept, and high activity from the afternoon and evening the following day. It is a perfectly valid approach measure, but it troubles my concept of marathon.
+                    Each measure has some strengths and weaknesses. Marathons by calendar day is simple and unambiguous, but it fails to capture races in the same session that go beyond midnight (see Race Count by Hour). Marathons by any 24-hour block resolve this problem, but are subject to counting unrelated sessions. In my case, high activity the night of Nov 29th, and high activity the afternoon of the 30th compose my top marathon of 121 races.
                     <br><br>
                     Perhaps a better approach, given what we know about this data, would require defining a "marathon day" that lasts 24 hours and begins at 5:00am. This regularly separates race activity (as seen in the Race Count by Hour figure) while maintaining the essence of a marathon. The drawback is complexity.
                 </p>
@@ -108,10 +106,6 @@
             <section class="active-days">
 
                 <section class="active-days-col">
-                    <h4>
-                        This section highlights the greater timeline alongside my (in)activity.
-                    </h4>
-
                     <table>
                         <tr class="blank-row"></tr>
                         <tr>
@@ -122,45 +116,45 @@
                         <tr>
                             <td>Last Race Date</td>
                             <td>. . . . .</td>
-                            <td>07/05/2022</td>
+                            <td>09/06/2022</td>
                         </tr>
                         <tr class="blank-row"></tr>
                         <tr>
                             <td>Total Days</td>
                             <td>. . . . .</td>
-                            <td>1446</td>
+                            <td>1509</td>
                         </tr>
                         <tr>
                             <td>Inactive</td>
                             <td>. . . . .</td>
-                            <td>1148</td>
+                            <td>1176</td>
                         </tr>
                         <tr>
                             <td>Active</td>
                             <td>. . . . .</td>
-                            <td>298</td>
+                            <td>333</td>
                         </tr>
                         <tr class="blank-row"></tr>
                         <tr>
                             <td>Total Races</td>
                             <td>. . . . .</td>
-                            <td>4567</td>
+                            <td>5000</td>
                         </tr>
                         <tr>
                             <td>Avg Races/Active Day</td>
                             <td>. . . . .</td>
-                            <td>15.3</td>
+                            <td>15.0</td>
                         </tr>
                         <tr>
                             <td>Avg Races/Day</td>
                             <td>. . . . .</td>
-                            <td>3.2</td>
+                            <td>3.3</td>
                         </tr>
                         <tr class="blank-row"></tr>
                         <tr>
-                            <td>(Active) &lt;10 Races </td>
+                            <td>Days with &lt;10 races </td>
                             <td>. . . . .</td>
-                            <td>122</td>
+                            <td>135</td>
                         </tr>
                         <tr>
                             <td>Rate</td>
@@ -168,9 +162,9 @@
                             <td>0.41</td>
                         </tr>
                         <tr>
-                            <td>(Active) =1 Race </td>
+                            <td>Days with 1 race</td>
                             <td>. . . . .</td>
-                            <td>23</td>
+                            <td>25</td>
                         </tr>
                         <tr>
                             <td>Rate</td>
@@ -178,26 +172,27 @@
                             <td>0.08</td>
                         </tr>
                         <tr>
-                            <td>Avg #races when >=10 Races</td>
+                            <td>Avg races when (>=10) races</td>
                             <td>. . . . .</td>
-                            <td>23.0</td>
+                            <td>22.4</td>
                         </tr>
                         <tr class="blank-row"></tr>
                     </table>
 
                     <ul>
-                        <li>Since starting, I have been active (completing at least 1 race) for 298 out of 1446 total days.</li>
-                        <li>Of the 298 active days, 23 (8%) of them had exactly 1 race.</li>
-                        <li>Of the 298 active days, 122 (41%) of them had strictly less than 10 races. This cutoff is somewhat relevant as typeracer displays your average wpm of your 10 most recent races.</li>
-                        <li>Since starting, I have completed a meager average of 3.2 races per day</li>
-                        <li>When I do participate (21% of days), I complete an average of 15 races.</li>
-                        <li>On days I complete at least 10 races (59% of active days), I complete an average of 23 races.</li>
+                        <li>Since starting, I have been active (completing at least 1 race) for 333 out of 1509 total days.</li>
+                        <li>Of the 333 active days, 25 (8%) of them had exactly 1 race.</li>
+                        <li>Of the 333 active days, 135 (41%) of them had strictly less than 10 races. This cutoff is somewhat relevant as typeracer displays your average wpm of your 10 most recent races.</li>
+                        <li>Since starting, I have completed a meager average of 3.3 races per day</li>
+                        <li>When I do participate (22% of total days), I complete an average of 15 races.</li>
+                        <li>On days I complete at least 10 races (59% of active days), I complete an average of 22.4 races.</li>
                         <li>The heatmap helps illustrate the surprising lack of races in June across several years. Although, my activity every year was far more sparse than anticipated.</li>
+                        <li>The heatmap was made in Python with calplot; details can be found on github. Unfortunately, I could not find an easy way to change the color of the colorbar labels (20, 40, 60, 80), so I adjusted them on Figma afterwards.</li>
                     </ul>
                 </section>
                 <section class="active-days-col">
-                    <img src="./images/charts/heatmap_cb.png" id="heatmap">
-                    <img src="./images/charts/pie-active-inactive.png">
+                    <img src="./images/charts/heatmap_cb.svg" id="heatmap">
+                    <img src="./images/charts/pie-active-inactive.svg">
                 </section>
                 
             </section> <!-- end active-days -->
@@ -207,7 +202,7 @@
     </section> <!-- end activity -->
 
 
-    <!-- Section: Common Races -->
+    <!--------- Section: Common Races --------->
     <section class="common-races">
         <h2 class="collapsible-button">Common Races</h2>
 
@@ -215,28 +210,36 @@
 
             <!-- subsection: Common Races Intro -->
             <section class="cr-intro">
-                <p>
-                    Typeracer allows you to play in several universes, or libraries of texts. To preface, I will be using text, text id, race id, script, and quote interchangably. 
-                    <br><br>
-                    Standard universes for many languages exist. Additionally, there are dozens of topical or niche universes such as Dictionary, Jokes, Lord of the Rings, Copypasta, and more. Once again, typeracerdata.com is a tremendous resource for all this information. You can find a list of popular universes <a href="https://typeracerdata.com/universes">here</a>.
-                    <br><br>
-                    I almost exclusive play in the default english universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2857 unique text ids. Consequently, I have experienced about 38.5% of this universe.
-                    <br><br>
-                    There were 2857 unique text ids among 4567 total races. Roughly speaking, 1/3rd of my races were on quotes I have raced before, and 2/3rds were completely novel.
-                    <br><br>
-                    The bar chart illustrates: among 2857 unique quotes, 1683 of them were raced exactly one time. 785 of them were raced exactly twice, and so on. The most frequently encountered quote was actually a tie - both quotes having been raced 6 times each each.
-                    <br><br>
-                    The next section reports on some of my most encountered races. Including the race script, a figure plotting race outcomes, and some light stats.
-                </p>
-
-                <section class="cr-flex-col">
-                    <img src="./images/charts/pie-universe-texts.png">
-                    <img src="./images/charts/pie-text-uniqueness.png">
+                <section class="cr-flex-row">
+                    <p>
+                        Typeracer allows you to play in several universes, or libraries of texts. To preface, I will be using text, text id, race id, script, and quote interchangably. 
+                        <br><br>
+                        Standard universes for many languages exist. Additionally, there are dozens of topical or niche universes such as Dictionary, Jokes, Lord of the Rings, Copypasta, and more. Once again, typeracerdata.com is a tremendous resource for all this information. You can find a list of popular universes <a href="https://typeracerdata.com/universes">here</a>.
+                        <br><br>
+                        I almost exclusive play in the default english universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2973 unique text ids. Consequently, I have experienced about 40% of this universe. Additionally, 41% of my races are on texts I have previously raced.
+                    </p>
+                    <img src="./images/charts/pie-universe-texts.svg" id="cr-pie">
+                    <img src="./images/charts/pie-text-uniqueness.svg" id="cr-pie">
                 </section>
+                <section class="section-break"></section>
                 <section class="cr-flex-col">
-                    <img src="./images/charts/column-textid-encounters.png">
+                    <section class="cr-flex-row">
+                        <img src="./images/charts/column-unique-quote-encounters.svg">
+                        <img src="./images/charts/column-full-quote-encounters.svg">
+                        <img src="./images/charts/stackedbar-quote-encounters.svg">
+                    </section>
+                    <p>
+                        These three charts are understandably dense.<br>Fundamentally, they present information related to the encounters and repetitions of texts.
+                        <br><br>
+                        The leftmost chart tells us there were 1630 quotes I encountered exactly once. 873 distinct quotes were encountered exactly twice. 316 distinct quotes were encountered exactly three times, and so on. There was a single quote encountered more than any other - raced 7 times. In all, these points sum to our observed total of 2973 unique text ids.
+                        <br><br>
+                        The middle chart is a modification of its precessesor. It displays the <span>total</span> encounters of such quotes. There were 1630 quotes I raced exactly once, so I did 1630 of those races. 873 distinct quotes were raced exactly twice, so I did 1746 of those races. 316 distinct quotes were raced exactly thrice, so I did 948 of those races, and so on. These points sum to our total race count of 5000. Notably, this illustrates that I completed more duplicate texts than texts I only encountered once.
+                        <br><br>
+                        The third chart, a single stacked bar chart, attempts to illustrate the same thing. I like this chart since you can more easily see the proportions of repeated races as they related to the 5000 total races.
+                        <br><br>
+                        The next section reports on some of my most encountered races. Including the race script, a figure plotting race outcomes, and some light stats.
+                    </p>
                 </section>
-                
             </section>
             <section class="section-break"></section>
 
@@ -250,24 +253,10 @@
                         - On a Plain (song) by Nirvana
                     </p>
         
-                    <img src="./images/charts/text-ids/3550811-line.png">
+                    <img src="./images/charts/text-ids/a-chart-3550811.svg">
         
                     <section class="quote-stats-container">
-                        <img src="./images/charts/text-ids/3550811-stats.png">
-                    </section>
-                </section>
-
-                <section class="sample-quote">
-                    <p class="text-quote">
-                        There is some love that will not go away. You're here, there's nothing I fear and I know that my heart will go on. We'll stay forever this way, you are safe in my heart.
-                        <br><br>
-                        - My Heart Will Go On (song) by Céline Dion
-                    </p>
-        
-                    <img src="./images/charts/text-ids/3640264-line.png">
-        
-                    <section class="quote-stats-container">
-                        <img src="./images/charts/text-ids/3640264-stats.png">
+                        <img src="./images/charts/text-ids/a-stats-3550811.png">
                     </section>
                 </section>
 
@@ -278,24 +267,38 @@
                         - Mulholland Drive (movie) by David Lynch
                     </p>
         
-                    <img src="./images/charts/text-ids/76-line.png">
+                    <img src="./images/charts/text-ids/b-chart-76.svg">
         
                     <section class="quote-stats-container">
-                        <img src="./images/charts/text-ids/76-stats.png">
+                        <img src="./images/charts/text-ids/b-stats-76.png">
                     </section>
                 </section>
 
                 <section class="sample-quote">
                     <p class="text-quote">
-                        Every craft and every investigation, and likewise every action and decision, seems to aim at some good; hence the good has been well described as that at which everything aims. However, there is an apparent difference among the ends aimed at. For the end is sometimes an activity, sometimes a product beyond the activity; and when there is an end beyond the action, the product is by nature better than the activity.
+                        So you run and you run to catch up with the sun but it's sinking, racing around to come up behind you again. The sun is the same in a relative way but you're older, shorter of breath and one day closer to death.
                         <br><br>
-                        - Aristotle: Introductory Readings (book) by Aristotle
+                        - Time (song) by Pink Floyd
                     </p>
         
-                    <img src="./images/charts/text-ids/437-line.png">
+                    <img src="./images/charts/text-ids/c-chart-3550525.svg">
         
                     <section class="quote-stats-container">
-                        <img src="./images/charts/text-ids/437-stats.png">
+                        <img src="./images/charts/text-ids/c-stats-3550525.png">
+                    </section>
+                </section>
+
+                <section class="sample-quote">
+                    <p class="text-quote">
+                        What a lamentable thing it is that men should blame the gods and regard us as the source of their troubles, when it is their own transgressions which bring them suffering that was not their destiny.
+                        <br><br>
+                        - The Odyssey (book) by Homer
+                    </p>
+        
+                    <img src="./images/charts/text-ids/d-chart-3620269.svg">
+        
+                    <section class="quote-stats-container">
+                        <img src="./images/charts/text-ids/d-stats-3620269.png">
                     </section>
                 </section>
 
@@ -306,19 +309,31 @@
                         - Candle In The Wind (song) by Elton John
                     </p>
         
-                    <img src="./images/charts/text-ids/3640134-line.png">
+                    <img src="./images/charts/text-ids/e-chart-3640134.svg">
         
                     <section class="quote-stats-container">
-                        <img src="./images/charts/text-ids/3640134-stats.png">
+                        <img src="./images/charts/text-ids/e-stats-3640134.png">
                     </section>
                 </section>
-
 
             </section> <!-- end sample-quotes-container -->
 
             <section class="section-break"></section>
         </section> <!-- end collapsible-content -->
     </section> <!-- end Common Races -->
+
+    <!--------- Section: WPM Improvement --------->
+    <section class="wpm">
+        <h2 class="collapsible-button">WPM Improvement</h2>
+
+        <section class="collapsible-content">
+
+            <section class="wpm-intro">
+                <h4>TODO</h4>
+                <img src="./images/blanking.png">
+            </section>
+        </section>
+    </section>
     
 
     <section class="section-break"></section>
