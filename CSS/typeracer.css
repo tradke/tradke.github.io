@@ -161,22 +161,12 @@ nav > a {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items:top;
 }
 
 .active-days-col {
     display:flex;
     flex-direction: column;
-}
-
-h4 {
-    font-family:"Lexend Deca";
-    font-weight:200;
-    font-size:32px;
-    margin-left:5vw;
-    margin-right:5vw;
-    margin-bottom:5vh;
-    text-align:center;
 }
 
 .blank-row {
@@ -188,6 +178,7 @@ h4 {
     align-self:center;
     border-top:2px solid white;
     border-bottom:2px solid white;
+    margin-top:5.5vh;
 }
 
 .active-days table td {
@@ -195,6 +186,7 @@ h4 {
     font-weight:bold;
     font-size:26px;
 }
+
 .active-days table td + td {
     text-align:center;
     padding-left:24px;
@@ -230,7 +222,7 @@ h4 {
 }
 
 .active-days img {
-    width: 25vw;
+    width: 20vw;
     height:auto;
     margin-right: 5vw;
     align-self: center;
