@@ -57,6 +57,52 @@
         </section>
     </section>
 
+    <!--------- Section: wpm --------->
+    <section class="wpm">
+        <h2 class="collapsible-button">WPM Improvement</h2>
+
+        <section class="collapsible-content">
+
+            <section class="wpm-intr">
+                <p>
+                    Measuring my true wpm is not entirely straightforward. You might consider my full career average, which is observed in the scorecard to be 87.3 wpm. However, I have improved a lot since starting, so the full average is not so precise. Typeracer also tracks and displays the average speed of your last 10 races. This measure is more telling of your current wpm capabilities, but is quite sensitive. It is not uncommon to have a string of good or bad races that swing this measure from 90wpm to 110wpm. This "recent 10" average can be more generally understood in terms of the Simple Moving Average (SMA).
+                    <br><br>
+                    The Simple Moving Average (SMA) will average a window of n contiguous points. I will use the notation SMA(n). SMA is useful for illustrating trends and smoothing out data such as this.
+                    <br><br>
+                    As shown in the chart, SMA(10) is a much more readable trendline than  observing the scattered points. SMA(10) also follows the "recent 10" stat I would have seen while completing these races. Naturally, SMA(100) is less easily swayed and the line is much more smooth. SMA(1000) ... Of course, SMA(5000) is simply the full average of 87.3 wpm.
+                    <br><br>
+                    ;;;;;;;;;;;;;;;;;;;;;
+                </p>
+                <img src="./images/charts/scatter-full-colorcoded.svg">
+            </section>
+            <section class="section-break"></section>
+
+            <section class="wpm-3col-container">
+                <section class="wpm-flex-col">
+                    <p>
+                        ~~col 1 :) Long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long words.
+                    </p>
+                </section>
+                <section class="vertical-line"></section>
+                <section class="wpm-flex-col">
+                    <p>
+                        col 2 Long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long words.
+                    </p>
+                </section>
+                <section class="vertical-line"></section>
+                <section class="wpm-flex-col">
+                    <p>
+                        ~~col 3 :) Long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long words.
+                    </p>
+                </section>
+            </section>
+            <section class="section-break"></section>
+
+
+            <!-- subsection: race-count -->
+
+        </section>
+    </section>
 
     <!--------- Section: Activity --------->
     <section class="activity">
@@ -66,11 +112,11 @@
 
             <!-- subsection: race-count -->
             <section class="race-count">
-                <section class="flex-col">
+                <section class="activity-flex-col">
                     <img src="./images/charts/race-count-year.svg">
                     <img src="./images/charts/race-count-day.svg">
                 </section>
-                <section class="flex-col">
+                <section class="activity-flex-col">
                     <img src="./images/charts/race-count-month.svg">
                     <img src="./images/charts/race-count-hour.svg">
                 </section>
@@ -322,19 +368,6 @@
             <section class="section-break"></section>
         </section> <!-- end collapsible-content -->
     </section> <!-- end Common Races -->
-
-    <!--------- Section: WPM Improvement --------->
-    <section class="wpm">
-        <h2 class="collapsible-button">WPM Improvement</h2>
-
-        <section class="collapsible-content">
-
-            <section class="wpm-intro">
-                <h4>TODO</h4>
-                <img src="./images/blanking.png">
-            </section>
-        </section>
-    </section>
     
 
     <section class="section-break"></section>
