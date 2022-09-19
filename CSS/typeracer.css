@@ -107,44 +107,117 @@ nav > a {
 }
 
 /*----------- Section: wpm -----------*/
+.wpm-flex-col {
+    display:flex;
+    flex-direction:column;
+}
+
 .wpm-intr {
     display:flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items:center;
-    justify-content: center;
-}
-
-.wpm-intr img {
-    width: 33vw;
-    height:auto;
+    margin-bottom:5vh;
 }
 
 .wpm-intr p {
     font-size: 20px;
-    width:40vw;
+    width:50vw;
+    margin-left:5vw;;
+}
+
+.wpm-intr img {
+    width:32vw;
+    height:auto;
 }
 
 /*--- Subsection: start-full-end ---*/
-.vertical-line {
-    border-left: 1px solid white;
+.wpm-start-full-end img {
+    width: 36vw;
+    height:auto;
 }
 
-.wpm-3col-container {
+.wpm-start-full-end {
     display:flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-around;
+    align-items:center;
 }
 
-.wpm-flex-col {
+/*- table - */
+.wpm th, .wpm td:first-child {
+    font-size:26px;
+    font-family:"Bitter";
+    font-weight:400;
+    text-align: right;
+    padding-right:28px;
+    padding-bottom:16px;
+}
+
+.wpm th {
+    padding:48px;
+    padding-top:0px;
+    text-align: center;
+}
+
+.wpm td {
+    text-align:center;
+    font-size:28px;
+}
+
+.wpm td:nth-child(n+2), .wpm th:nth-child(n+2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.wpm-blank-row {
+    height:32px;
+}
+
+/*--- Subsection: best-races ---*/
+.best-races {
     display:flex;
-    flex-direction: column;
-    width:28vw;
-    justify-content:flex-end;
+    flex-direction:column;
 }
 
-.wpm-flex-col p {
-    font-size:18px;
+.best-races > p {
+    text-align:center;
+    align-self:center;
+    font-size:26px;
+    width:60vw;
+    margin-bottom:10vh;
+    margin-top:10vh;
 }
+
+.best-races-interactive {
+    display:flex;
+    flex-direction:column;
+}
+
+.best-races-buttons {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-bottom:6vh;
+}
+
+.best-races-buttons p {
+    align-self:center;
+}
+
+.best-races-charts {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+.best-races-charts img {
+    width:30vw;
+    height:auto;
+}
+
+
 
 
 /*----------- Section: Activity -----------*/
