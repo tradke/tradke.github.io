@@ -185,7 +185,7 @@ nav > a {
     align-self:center;
     font-size:26px;
     width:60vw;
-    margin-bottom:10vh;
+    margin-bottom:5vh;
     margin-top:10vh;
 }
 
@@ -197,22 +197,34 @@ nav > a {
 .best-races-buttons {
     display:flex;
     flex-direction:row;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items:center;
-    margin-bottom:6vh;
 }
 
-.best-races-buttons p {
+.best-races-buttons button {
     align-self:center;
+    margin:32px;
+    padding:8px;
+
+    font-size:28px;
+    color:white;
+    background-color: #404040;
+    border: 2px solid #404040;
+    border-radius:12px;
+    cursor:pointer;
 }
 
-.best-races-charts {
+#button-chron {
+    border-color:white;
+}
+
+#best-races-charts {
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
 }
 
-.best-races-charts img {
+#best-races-charts img {
     width:30vw;
     height:auto;
 }
