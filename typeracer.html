@@ -45,7 +45,7 @@
                 <p>
                     During the summer of 2018 I decided to train myself on "proper" touch typing. I started with and still prefer <a href="https://play.typeracer.com/">typeracer.com</a>, but there are good alternatives.
                     <br><br>
-                    The scatterplot depicts a high-level summary of my progress thus far. The following sections will explore my typeracer activity, individual races, and WPM improvement (TODO).
+                    The scatterplot depicts a high-level summary of my progress thus far. The following sections explore my WPM improvement, activity, and text details.
                     <br><br>
                     This project was multipurpose. It let me reflect on my progress which is an important step in further improvement. Moreover, it gave me an opportunity to dig my teeth into Excel, where most of the stats and charts were created.
                     <br><br>
@@ -64,13 +64,11 @@
         <section class="collapsible-content">
             <section class="wpm-intr">
                 <p>
-                    The typeracer scorecard (snapshotted at the top of this page) displays two different WPM measures: "recent 10" and "Full Avg." Evidently, my full average of 87.3 wpm is weighed down by the hundreds or thousands of races it took to improve. On the other hand, the "recent 10" measure may reflect my current skill level better, but it is incredibly sensitive to strings of good or bad races. As you will see in the table below, this average can swing from 90 to 110 wpm in a short peroid. Due to this volatility I prefer more conservative averages.
+                    Typeracer emphasizes your current wpm as an average of your 10 most recent races. In the scorecard snapshot at the top of this page, my last 10 races came out to 106 wpm. Unfortunately, this average is sensitive to a series of good or bad races. In my case, it has swung from 90 to 110 wpm in a short period. On the other hand, my full average of 87.3 wpm is weighed down by the hundreds or thousands of races it took to improve from my humble beginnings. A more reasonable judge of my current level lies between these extremes.
                     <br><br>
-                    Very long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long words.
+                    The table and chart below include different Simple Moving Averages (SMA). SMA(n) yields the averages of n contiguous points. So a plot of SMA(10) will illustrate a moving average of 10 races. The chart below does well to illustrate the problems with SMA(10) and the full average when compared to SMA(100) or the more gradual SMA(1000). 
                     <br><br>
-                    Very long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long words.
-                    <br><br>
-                    Very long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long words.
+                    I was quite surprised to see the standard deviation of the first 1000 and last 1000 races were so similar. However, deviating by 9.5 around an average of 101.7 is a lot less striking than the deviation of 9.4 from 67.0 wpm. This concept is summarized as the coefficient of variation (CoV). A larger CoV indicates greater relative spread.                    
                 </p>
                 <img src="./images/charts/column-wpm-by-year.svg">
             </section>
@@ -150,7 +148,7 @@
             <!-- subsection: best-races -->
             <section class="best-races">
                 <p>
-                    Short short short short short short short short short short short short short short short short short short short short short short short short short short words.
+                    These charts detail the progression of my best races. I had 24 new bests in total, not including my very first race. The charts comes in two flavors you can swap between: chronological and sorted.
                 </p>
 
                 <section class="best-races-interactive">
@@ -321,7 +319,7 @@
 
     <!--------- Section: Common Races --------->
     <section class="common-races">
-        <h2 class="collapsible-button">Common Races</h2>
+        <h2 class="collapsible-button">Encountered Texts</h2>
 
         <section class="collapsible-content">
 
@@ -331,7 +329,7 @@
                     <p>
                         Typeracer allows you to play in several universes, or libraries of texts. To preface, I will be using text, text id, race id, script, and quote interchangably. 
                         <br><br>
-                        Standard universes for many languages exist. Additionally, there are dozens of topical or niche universes such as Dictionary, Jokes, Lord of the Rings, Copypasta, and more. Once again, typeracerdata.com is a tremendous resource for all this information. You can find a list of popular universes <a href="https://typeracerdata.com/universes">here</a>.
+                        Standard universes for many languages exist. Additionally, there are dozens of topical or niche universes such as Dictionary, Jokes, Lord of the Rings, and Copypasta. Once again, typeracerdata.com is a tremendous resource for all this information. You can find a list of popular universes <a href="https://typeracerdata.com/universes">here</a>.
                         <br><br>
                         I almost exclusive play in the default english universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2973 unique text ids. Consequently, I have experienced about 40% of this universe. Additionally, 41% of my races are on texts I have previously raced.
                     </p>
