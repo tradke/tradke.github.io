@@ -30,7 +30,7 @@
         <a href="https://data.typeracer.com/pit/profile?user=tythal&ref=badge">
             <img src="./images/typeracer-profile-summary.png" alt="Typeracer Score Card"/>
         </a>
-        <p>Sep. 16, 2022</p>
+        <p>Sep. 23, 2022</p>
         <section class="section-break"></section>
     </section>
     
@@ -56,6 +56,27 @@
             <section class="section-break"></section>
         </section>
     </section>
+
+    <!--------- Section: Highlights --------->
+    <section>
+        <h2 class="collapsible-button">Highlights</h2>
+
+        <section class="collapsible-content">
+
+            <section class="highlights-row">
+                <img src="./images/charts/race-count-hour.svg">
+                <img src="./images/charts/line-normal-distributions.svg">
+                <img src="./images/charts/scatter-best-races.svg">
+            </section>
+            <section class="highlights-row">
+                <img src="./images/charts/heatmap_cb.svg">
+                <img src="./images/charts/misc/histogram-wpm.svg">
+            </section>
+
+            <section class="section-break"></section>
+        </section>
+    </section>
+
 
     <!--------- Section: wpm --------->
     <section class="wpm">
@@ -162,12 +183,11 @@
                         <img src="./images/charts/best-races/chron-races.svg">
                         <img src="./images/charts/best-races/chron-days.svg">
                     </section>
+
+                    <img src="./images/charts/scatter-best-races.svg" id="br-scatter">
                 </section>
             </section>
 
-
-
-            
             <section class="section-break"></section>
         </section>
     </section>
@@ -206,14 +226,14 @@
                 <p>
                     I chose to define marathon as the number of races completed in a single calendar day.
                     <br><br>
-                    This metric was inspired by typeracerdata.com. They define a marathon as the number of races completed in any 24 hour block. This allows your marathon to bridge adjacent calendar days. As such, their definition found my top marathon to be
+                    This metric was inspired by typeracerdata.com. They define a marathon as the number of races completed in any 24-hour block. This allows your marathon to bridge adjacent calendar days. As such, their definition found my top marathon to be
                         <span>
                             121 races in 24 hours, starting 2021 November 29, 9:23pm.
                         </span>
                     <br><br>
-                    Each measure has some strengths and weaknesses. Marathons by calendar day is simple and unambiguous, but it fails to capture races in the same session that go beyond midnight (see Race Count by Hour). Marathons by any 24-hour block resolve this problem, but are subject to counting unrelated sessions. In my case, high activity the night of Nov 29th, and high activity the afternoon of the 30th compose my top marathon of 121 races.
+                    Each measure has some strengths and weaknesses. Marathons by calendar day is simple and unambiguous, but it fails to capture races in the same session that go beyond midnight (see Race Count by Hour). Marathons by any 24-hour block resolve this problem but are subject to counting unrelated sessions. In my case, high activity the night of Nov 29th, and high activity the afternoon of the 30th compose my top marathon of 121 races.
                     <br><br>
-                    Perhaps a better approach, given what we know about this data, would require defining a "marathon day" that lasts 24 hours and begins at 5:00am. This regularly separates race activity (as seen in the Race Count by Hour figure) while maintaining the essence of a marathon. The drawback is complexity.
+                    Perhaps a better approach, given what we know about this data, would require defining a "marathon day" that lasts 24-hours and begins at 5:00am. This regularly separates race activity (as seen in the Race Count by Hour figure) while maintaining the essence of a marathon. The drawback is complexity.
                 </p>
             </section> <!-- end marathon -->
             <section class="section-break"></section>
@@ -327,11 +347,11 @@
             <section class="cr-intro">
                 <section class="cr-flex-row">
                     <p>
-                        Typeracer allows you to play in several universes, or libraries of texts. To preface, I will be using text, text id, race id, script, and quote interchangably. 
+                        Typeracer allows you to play in several universes, or libraries of texts. To preface, I will be using text, text id, race id, script, and quote interchangeably. 
                         <br><br>
                         Standard universes for many languages exist. Additionally, there are dozens of topical or niche universes such as Dictionary, Jokes, Lord of the Rings, and Copypasta. Once again, typeracerdata.com is a tremendous resource for all this information. You can find a list of popular universes <a href="https://typeracerdata.com/universes">here</a>.
                         <br><br>
-                        I almost exclusive play in the default english universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2973 unique text ids. Consequently, I have experienced about 40% of this universe. Additionally, 41% of my races are on texts I have previously raced.
+                        I almost exclusive play in the default English universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2973 unique text ids. Consequently, I have experienced about 40% of this universe. Additionally, 41% of my races are on texts I have previously raced.
                     </p>
                     <img src="./images/charts/pie-universe-texts.svg" id="cr-pie">
                     <img src="./images/charts/pie-text-uniqueness.svg" id="cr-pie">
@@ -348,7 +368,7 @@
                         <br><br>
                         The leftmost chart tells us there were 1630 quotes I encountered exactly once. 873 distinct quotes were encountered exactly twice. 316 distinct quotes were encountered exactly three times, and so on. There was a single quote encountered more than any other - raced 7 times. In all, these points sum to our observed total of 2973 unique text ids.
                         <br><br>
-                        The middle chart is a modification of its precessesor. It displays the <span>total</span> encounters of such quotes. There were 1630 quotes I raced exactly once, so I did 1630 of those races. 873 distinct quotes were raced exactly twice, so I did 1746 of those races. 316 distinct quotes were raced exactly thrice, so I did 948 of those races, and so on. These points sum to our total race count of 5000. Notably, this illustrates that I completed more duplicate texts than texts I only encountered once.
+                        The middle chart is a modification of the first. It displays the <span>total</span> encounters of such quotes. There were 1630 quotes I raced exactly once, so I did 1630 of those races. 873 distinct quotes were raced exactly twice, so I did 1746 of those races. 316 distinct quotes were raced exactly thrice, so I did 948 of those races, and so on. These points sum to our total race count of 5000. Notably, this illustrates that I completed more duplicate texts than texts I only encountered once.
                         <br><br>
                         The third chart, a single stacked bar chart, attempts to illustrate the same thing. I like this chart since you can more easily see the proportions of repeated races as they related to the 5000 total races.
                         <br><br>
@@ -436,6 +456,26 @@
             <section class="section-break"></section>
         </section> <!-- end collapsible-content -->
     </section> <!-- end Common Races -->
+
+    <!--------- Section: Misc --------->
+    <section class="misc">
+        <h2 class="collapsible-button">Misc</h2>
+
+        <section class="collapsible-content">
+
+            <section class="misc-imgs">
+                <img src="./images/charts/misc/histogram-wpm.svg">
+                <img src="./images/charts/misc/scatter-100-accuracy.svg">
+                <section class="misc-imgs-row">
+                    <img src="./images/charts/misc/pie-lobby-size.svg">
+                    <img src="./images/charts/misc/pie-ranks.svg">
+                    <img src="./images/charts/misc/pie-win-rate.svg">
+                </section>
+            </section>
+
+            <section class="section-break"></section>
+        </section>
+    </section>
     
 
     <section class="section-break"></section>
