@@ -30,7 +30,7 @@
         <a href="https://data.typeracer.com/pit/profile?user=tythal&ref=badge">
             <img src="./images/typeracer-profile-summary.png" alt="Typeracer Score Card"/>
         </a>
-        <p>Sep. 16, 2022</p>
+        <p>Sep. 23, 2022</p>
         <section class="section-break"></section>
     </section>
     
@@ -45,11 +45,11 @@
                 <p>
                     During the summer of 2018 I decided to train myself on "proper" touch typing. I started with and still prefer <a href="https://play.typeracer.com/">typeracer.com</a>, but there are good alternatives.
                     <br><br>
-                    The scatterplot depicts a high-level summary of my progress thus far. The following sections will explore my typeracer activity, individual races, and WPM improvement (TODO).
+                    The scatterplot depicts a high-level summary of my progress thus far. The following sections explore my WPM improvement, activity, and text details.
                     <br><br>
                     This project was multipurpose. It let me reflect on my progress which is an important step in further improvement. Moreover, it gave me an opportunity to dig my teeth into Excel, where most of the stats and charts were created.
                     <br><br>
-                    Lastly, I would like to credit <a href="https://typeracerdata.com/profile?username=tythal">typeracerdata.com</a> for inspiring for simplifying several parts of this project. 
+                    Lastly, I would like to credit <a href="https://typeracerdata.com/profile?username=tythal">typeracerdata.com</a> for inspiring or simplifying several parts of this project. 
                 </p>
                 <img src="./images/charts/scatter-full-colorcoded.svg">
             </section>
@@ -57,6 +57,140 @@
         </section>
     </section>
 
+    <!--------- Section: Highlights --------->
+    <section>
+        <h2 class="collapsible-button">Highlights</h2>
+
+        <section class="collapsible-content">
+
+            <section class="highlights-row">
+                <img src="./images/charts/race-count-hour.svg">
+                <img src="./images/charts/line-normal-distributions.svg">
+                <img src="./images/charts/scatter-best-races.svg">
+            </section>
+            <section class="highlights-row">
+                <img src="./images/charts/heatmap_cb.svg">
+                <img src="./images/charts/misc/histogram-wpm.svg">
+            </section>
+
+            <section class="section-break"></section>
+        </section>
+    </section>
+
+
+    <!--------- Section: wpm --------->
+    <section class="wpm">
+        <h2 class="collapsible-button">WPM Improvement</h2>
+
+        <section class="collapsible-content">
+            <section class="wpm-intr">
+                <p>
+                    Typeracer emphasizes your current wpm as an average of your 10 most recent races. In the scorecard snapshot at the top of this page, my last 10 races came out to 106 wpm. Unfortunately, this average is sensitive to a series of good or bad races. In my case, it has swung from 90 to 110 wpm in a short period. On the other hand, my full average of 87.3 wpm is weighed down by the hundreds or thousands of races it took to improve from my humble beginnings. A more reasonable judge of my current level lies between these extremes.
+                    <br><br>
+                    The table and chart below include different Simple Moving Averages (SMA). SMA(n) yields the averages of n contiguous points. So a plot of SMA(10) will illustrate a moving average of 10 races. The chart below does well to illustrate the problems with SMA(10) and the full average when compared to SMA(100) or the more gradual SMA(1000). 
+                    <br><br>
+                    I was quite surprised to see the standard deviation of the first 1000 and last 1000 races were so similar. However, deviating by 9.5 around an average of 101.7 is a lot less striking than the deviation of 9.4 from 67.0 wpm. This concept is summarized as the coefficient of variation (CoV). A larger CoV indicates greater relative spread.                    
+                </p>
+                <img src="./images/charts/column-wpm-by-year.svg">
+            </section>
+
+            <section class="wpm-start-full-end">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>First 1000</th>
+                        <th>Full 5000</th>
+                        <th>Last 1000</th>
+                    </tr>
+                    <tr>
+                        <td>Avg WPM</td>
+                        <td>67.0</td>
+                        <td>87.3</td>
+                        <td>101.7</td>
+                    </tr>
+                    <tr>
+                        <td>STDev (σ)</td>
+                        <td>9.4</td>
+                        <td>15.6</td>
+                        <td>9.5</td>
+                    </tr>
+                    <tr class="wpm-blank-row"><td><td><td><td></td></td></td></td></tr>
+                    <tr>
+                        <td>Mean ± 2σ</td>
+                        <td>[48, 86]</td>
+                        <td>[56, 119]</td>
+                        <td>[83, 121]</td>
+                    </tr>
+                    <tr>
+                        <td>Coefficient of Variation</td>
+                        <td>0.1406</td>
+                        <td>0.1788</td>
+                        <td>0.0931</td>
+                    </tr>
+                    <tr class="wpm-blank-row"><td><td><td><td></td></td></td></td></tr>
+                    <tr>
+                        <td>Best SMA(10)</td>
+                        <td>80.1</td>
+                        <td>110.5</td>
+                        <td>110.5</td>
+                    </tr>
+                    <tr>
+                        <td>Worst SMA(10)</td>
+                        <td>45.3</td>
+                        <td>45.3</td>
+                        <td>89.9</td>
+                    </tr>
+                    <tr class="wpm-blank-row"><td><td><td><td></td></td></td></td></tr>
+                    <tr>
+                        <td>Best SMA(100)</td>
+                        <td>73.9</td>
+                        <td>104.6</td>
+                        <td>104.6</td>
+                    </tr>
+                    <tr>
+                        <td>Worst SMA(100)</td>
+                        <td>54.4</td>
+                        <td>54.4</td>
+                        <td>98.0</td>
+                    </tr>
+
+
+
+                </table>
+                
+                <section class="wpm-flex-col">
+                    <img src="./images/charts/line-normal-distributions.svg">
+                    <img src="./images/charts/combo-SMA.svg">
+                </section>
+            </section>
+            <section class="section-break"></section>
+
+
+            <!-- subsection: best-races -->
+            <section class="best-races">
+                <p>
+                    These charts detail the progression of my best races. I had 24 new bests in total, not including my very first race. The charts comes in two flavors you can swap between: chronological and sorted.
+                </p>
+
+                <section class="best-races-interactive">
+                    <section class="best-races-buttons">
+                        <button id="button-chron" type="button" class="br-button-displayed">Chronological</button>
+                        <button id="button-sorted" type="button" class="br-button-hidden">Sorted</button>
+                    </section>
+
+                    <section id="best-races-charts">
+                        <img src="./images/charts/best-races/chron-gains.svg">
+                        <img src="./images/charts/best-races/chron-races.svg">
+                        <img src="./images/charts/best-races/chron-days.svg">
+                    </section>
+
+                    <img src="./images/charts/scatter-best-races.svg" id="br-scatter">
+                </section>
+            </section>
+
+            <section class="section-break"></section>
+        </section>
+    </section>
 
     <!--------- Section: Activity --------->
     <section class="activity">
@@ -66,11 +200,11 @@
 
             <!-- subsection: race-count -->
             <section class="race-count">
-                <section class="flex-col">
+                <section class="activity-flex-col">
                     <img src="./images/charts/race-count-year.svg">
                     <img src="./images/charts/race-count-day.svg">
                 </section>
-                <section class="flex-col">
+                <section class="activity-flex-col">
                     <img src="./images/charts/race-count-month.svg">
                     <img src="./images/charts/race-count-hour.svg">
                 </section>
@@ -92,14 +226,14 @@
                 <p>
                     I chose to define marathon as the number of races completed in a single calendar day.
                     <br><br>
-                    This metric was inspired by typeracerdata.com. They define a marathon as the number of races completed in any 24 hour block. This allows your marathon to bridge adjacent calendar days. As such, their definition found my top marathon to be
+                    This metric was inspired by typeracerdata.com. They define a marathon as the number of races completed in any 24-hour block. This allows your marathon to bridge adjacent calendar days. As such, their definition found my top marathon to be
                         <span>
                             121 races in 24 hours, starting 2021 November 29, 9:23pm.
                         </span>
                     <br><br>
-                    Each measure has some strengths and weaknesses. Marathons by calendar day is simple and unambiguous, but it fails to capture races in the same session that go beyond midnight (see Race Count by Hour). Marathons by any 24-hour block resolve this problem, but are subject to counting unrelated sessions. In my case, high activity the night of Nov 29th, and high activity the afternoon of the 30th compose my top marathon of 121 races.
+                    Each measure has some strengths and weaknesses. Marathons by calendar day is simple and unambiguous, but it fails to capture races in the same session that go beyond midnight (see Race Count by Hour). Marathons by any 24-hour block resolve this problem but are subject to counting unrelated sessions. In my case, high activity the night of Nov 29th, and high activity the afternoon of the 30th compose my top marathon of 121 races.
                     <br><br>
-                    Perhaps a better approach, given what we know about this data, would require defining a "marathon day" that lasts 24 hours and begins at 5:00am. This regularly separates race activity (as seen in the Race Count by Hour figure) while maintaining the essence of a marathon. The drawback is complexity.
+                    Perhaps a better approach, given what we know about this data, would require defining a "marathon day" that lasts 24-hours and begins at 5:00am. This regularly separates race activity (as seen in the Race Count by Hour figure) while maintaining the essence of a marathon. The drawback is complexity.
                 </p>
             </section> <!-- end marathon -->
             <section class="section-break"></section>
@@ -205,7 +339,7 @@
 
     <!--------- Section: Common Races --------->
     <section class="common-races">
-        <h2 class="collapsible-button">Common Races</h2>
+        <h2 class="collapsible-button">Encountered Texts</h2>
 
         <section class="collapsible-content">
 
@@ -213,11 +347,11 @@
             <section class="cr-intro">
                 <section class="cr-flex-row">
                     <p>
-                        Typeracer allows you to play in several universes, or libraries of texts. To preface, I will be using text, text id, race id, script, and quote interchangably. 
+                        Typeracer allows you to play in several universes, or libraries of texts. To preface, I will be using text, text id, race id, script, and quote interchangeably. 
                         <br><br>
-                        Standard universes for many languages exist. Additionally, there are dozens of topical or niche universes such as Dictionary, Jokes, Lord of the Rings, Copypasta, and more. Once again, typeracerdata.com is a tremendous resource for all this information. You can find a list of popular universes <a href="https://typeracerdata.com/universes">here</a>.
+                        Standard universes for many languages exist. Additionally, there are dozens of topical or niche universes such as Dictionary, Jokes, Lord of the Rings, and Copypasta. Once again, typeracerdata.com is a tremendous resource for all this information. You can find a list of popular universes <a href="https://typeracerdata.com/universes">here</a>.
                         <br><br>
-                        I almost exclusive play in the default english universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2973 unique text ids. Consequently, I have experienced about 40% of this universe. Additionally, 41% of my races are on texts I have previously raced.
+                        I almost exclusive play in the default English universe. Typeracerdata.com suggests there are 7411 unique texts in this universe at the time of writing, and I have completed 2973 unique text ids. Consequently, I have experienced about 40% of this universe. Additionally, 41% of my races are on texts I have previously raced.
                     </p>
                     <img src="./images/charts/pie-universe-texts.svg" id="cr-pie">
                     <img src="./images/charts/pie-text-uniqueness.svg" id="cr-pie">
@@ -234,7 +368,7 @@
                         <br><br>
                         The leftmost chart tells us there were 1630 quotes I encountered exactly once. 873 distinct quotes were encountered exactly twice. 316 distinct quotes were encountered exactly three times, and so on. There was a single quote encountered more than any other - raced 7 times. In all, these points sum to our observed total of 2973 unique text ids.
                         <br><br>
-                        The middle chart is a modification of its precessesor. It displays the <span>total</span> encounters of such quotes. There were 1630 quotes I raced exactly once, so I did 1630 of those races. 873 distinct quotes were raced exactly twice, so I did 1746 of those races. 316 distinct quotes were raced exactly thrice, so I did 948 of those races, and so on. These points sum to our total race count of 5000. Notably, this illustrates that I completed more duplicate texts than texts I only encountered once.
+                        The middle chart is a modification of the first. It displays the <span>total</span> encounters of such quotes. There were 1630 quotes I raced exactly once, so I did 1630 of those races. 873 distinct quotes were raced exactly twice, so I did 1746 of those races. 316 distinct quotes were raced exactly thrice, so I did 948 of those races, and so on. These points sum to our total race count of 5000. Notably, this illustrates that I completed more duplicate texts than texts I only encountered once.
                         <br><br>
                         The third chart, a single stacked bar chart, attempts to illustrate the same thing. I like this chart since you can more easily see the proportions of repeated races as they related to the 5000 total races.
                         <br><br>
@@ -323,16 +457,23 @@
         </section> <!-- end collapsible-content -->
     </section> <!-- end Common Races -->
 
-    <!--------- Section: WPM Improvement --------->
-    <section class="wpm">
-        <h2 class="collapsible-button">WPM Improvement</h2>
+    <!--------- Section: Misc --------->
+    <section class="misc">
+        <h2 class="collapsible-button">Misc</h2>
 
         <section class="collapsible-content">
 
-            <section class="wpm-intro">
-                <h4>TODO</h4>
-                <img src="./images/blanking.png">
+            <section class="misc-imgs">
+                <img src="./images/charts/misc/histogram-wpm.svg">
+                <img src="./images/charts/misc/scatter-100-accuracy.svg">
+                <section class="misc-imgs-row">
+                    <img src="./images/charts/misc/pie-lobby-size.svg">
+                    <img src="./images/charts/misc/pie-ranks.svg">
+                    <img src="./images/charts/misc/pie-win-rate.svg">
+                </section>
             </section>
+
+            <section class="section-break"></section>
         </section>
     </section>
     
@@ -340,5 +481,6 @@
     <section class="section-break"></section>
     <section class="section-break"></section>
     <script src="./JS/collapsibles.js"></script>
+    <script src="./JS/best-race-buttons.js"></script>
 </body>
 </html>

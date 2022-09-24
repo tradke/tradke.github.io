@@ -77,10 +77,15 @@ nav > a {
 }
 
 /*----------- JS Collapsible Sections -----------*/
-.collapsible-button:hover {
-    cursor:pointer;
+.collapsible-button {
+    border:2px solid #404040;
     background-color:#353535;
     border-radius:12px;
+}
+
+.collapsible-button:hover {
+    cursor:pointer;
+    border-color:white;
 }
 
 .collapsible-content {
@@ -106,6 +111,153 @@ nav > a {
     font-size: 24px;
 }
 
+/*----------- Section: Highlights -----------*/
+.highlights-row {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content:center;
+    align-items: center;
+}
+
+.highlights-row img {
+    width:25vw;
+    height:fit-content;
+    margin:2vw;
+}
+
+
+/*----------- Section: wpm -----------*/
+.wpm-flex-col {
+    display:flex;
+    flex-direction:column;
+}
+
+.wpm-intr {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-bottom:5vh;
+}
+
+.wpm-intr p {
+    font-size: 20px;
+    width:50vw;
+    margin-left:5vw;;
+}
+
+.wpm-intr img {
+    width:32vw;
+    height:auto;
+}
+
+/*--- Subsection: start-full-end ---*/
+.wpm-start-full-end img {
+    width: 36vw;
+    height:auto;
+}
+
+.wpm-start-full-end {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+/*- table - */
+.wpm th, .wpm td:first-child {
+    font-size:26px;
+    font-family:"Bitter";
+    font-weight:400;
+    text-align: right;
+    padding-right:28px;
+    padding-bottom:16px;
+}
+
+.wpm th {
+    padding:48px;
+    padding-top:0px;
+    text-align: center;
+}
+
+.wpm td {
+    text-align:center;
+    font-size:28px;
+}
+
+.wpm td:nth-child(n+2), .wpm th:nth-child(n+2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.wpm-blank-row {
+    height:32px;
+}
+
+/*--- Subsection: best-races ---*/
+.best-races {
+    display:flex;
+    flex-direction:column;
+}
+
+.best-races > p {
+    text-align:center;
+    align-self:center;
+    font-size:26px;
+    width:50vw;
+    margin-bottom:5vh;
+    margin-top:10vh;
+}
+
+.best-races-interactive {
+    display:flex;
+    flex-direction:column;
+}
+
+.best-races-buttons {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.best-races-buttons button {
+    align-self:center;
+    margin:32px;
+    padding:8px;
+
+    font-size:28px;
+    color:white;
+    background-color: #404040;
+    border: 2px solid #404040;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+#button-chron {
+    border-color:white;
+}
+
+#best-races-charts {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+#best-races-charts img {
+    width:30vw;
+    height:auto;
+}
+
+#br-scatter {
+    width:30vw;
+    height:auto;
+    align-self:center;
+    margin-top:64px;
+}
+
+
 /*----------- Section: Activity -----------*/
 .activity p {
     font-size:22px;
@@ -120,14 +272,14 @@ nav > a {
     align-items:center;
 }
 
-.flex-col {
+.activity-flex-col {
     display:flex;
     flex-direction:column;
     align-items:center;
     margin: 2vh;
 }
 
-.flex-col > img {
+.activity-flex-col > img {
     display:flex;
     width:25vw;
     height:auto;
@@ -316,15 +468,25 @@ nav > a {
 
 /*---------------------------------*/
 
-/*----------- Section: WPM -----------*/
-.wpm-intro {
+/*----------- Section: Misc -----------*/
+.misc-imgs {
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
+    align-items:center;
+    gap:64px;
+}
+
+.misc-imgs img {
+    width:30vw;
+    height:auto;
+}
+
+.misc-imgs-row {
+    display:flex;
+    flex-direction:row;
     justify-content:center;
 }
 
-.wpm-intro img {
-    width:10vw;
-    height:10vw;
-    align-self:center;
+.misc-imgs-row img {
+    width:20vw;
 }
