@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Tableau connection -->
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400&family=Lato:ital,wght@1,300&family=Lexend+Deca:wght@200;400&family=Poppins:wght@200;400&display=swap">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/typeracer-words.css">
@@ -15,43 +19,120 @@
 <body>
 
     <h1>Typeracer Word Analysis</h1>
-    <span>Nov 18, 2022</span>
+    <span>Nov 26, 2022</span>
     <div class="short_break"></div>
     <section id="main_column">
 
+        <!----- Section 0: Introduction ----->
         <section id="section0" class="written_section">
             <h2 id="intro">Introduction</h2>
             <p>
                 This project is an extension and refinement of <a href="https://tradke.github.io/typeracer">my first typeracer analysis</a>. While the subject matter is the same, the scope is much more concise: An analysis of the words and characters encountered in my first 5000 typeraces.
             </p>
+            <p>
+                English word and character frequencies are well studied. My first exposure to this field was a <a href="https://www.youtube.com/watch?v=fCn8zs912OE">video</a> on Zipf's Law. For a cursory understanding, here are the wikipedia links to <a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Zipf's Law</a>, and the most common <a href="https://en.wikipedia.org/wiki/Most_common_words_in_English">words</a> and <a href="https://en.wikipedia.org/wiki/Letter_frequency">letters</a>
+            </p>
+            <p>
+                Lastly I would encourage you to read <a href="https://norvig.com/mayzner.html"> this analysis</a> by Peter Norvig. My project serves to explore my data and typing history, but Norvig's analysis is far more enlightening and relevant to the field of quantitative linguistics.
+            </p>
         </section>
 
+        <!----- Section 1: Words ----->
         <section id="section1" class="written_section">
             <h2>Section 1: Words</h2>
             <p>
-                repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words 
+                First and foremost I will be pretty flexible in what constitutes a word. For the most part, any discrete string of text will be considered a word. Words are words, <a href="https://www.youtube.com/watch?v=dNlkHtMgcPQ">nominalizations</a> are words, numbers are words, abbreviations are words, and even phoneticizations are words. This relates to the data collection process which is described in section 3.
             </p>
             <p>
-                repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words repeated words 
+                From 5,000 races I extracted 261,271 words; 13,354 (or about 5%) of which were unique.
             </p>
-            <img src="./images/thinkcozy.png">
+            <p>
+                The top 74 unique words hold a cumulative 130,716 occurrences. Meaning 0.55% of the unique words account for 50% of all words typed.
+            </p>            
+            <div class="viz-container">
+                <tableau-viz id="tableauViz"       
+                    src='https://public.tableau.com/views/typeracer_words/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link'
+                    width="850" height="650">
+                </tableau-viz>
+            </div>
+            <p>
+                Average word length among all words is skewed low because short length words are far more common. The 3 longest words shown below are hardly even words by conventional standards.
+            </p>
+            <img src="./images/tr-words/words_longest.svg">
+            <p>
+                My favorite part of this project was investigating word and character handedness. Handedness referring to the ability to type with one hand, or on one side of the keyboard. This measure is slightly problematic since "b" and "6" may be ambidextrous, and all the numbers may be considerd right handed if you utilize the number pad. I split my data according to my personal tendencies, and ignored numeric characters for this part.
+            </p>
+            <div class="div_row">
+                <img src="./images/tr-words/words_handedness.svg">
+                <div class="vertical_divider"></div>
+                <img src="./images/tr-words/words_longest_left.svg">
+                <div class="vertical_divider"></div>
+                <img src="./images/tr-words/words_longest_right.svg">
+            </div>
         </section>
 
+        <!----- Section 2: Chars ----->
         <section id="section2" class="written_section">
             <h2>Section 2: Characters</h2>
             <p>
-                chars chars chars chars
+                From 5,000 races and 261,271 words I extracted 1,389,073 characters.
             </p>
+            <p>
+                The tableau chart embedded below lets you compare character categories. You can change how the data is sorted (ascending, descending, alphabetical) with the button on the vertical axis beside "Count."
+            </p>
+            <div class="viz-container">
+                <tableau-viz id="tableauViz"       
+                    src='https://public.tableau.com/views/TyperacerCharacters/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link'
+                    width="960" height="650">
+                </tableau-viz>
+            </div>
+            <p>
+                Character handedness was more evenly distributed. I included all characters except space in this distribution. I almost exclusively hit space with my left thumb, but it was best ommitted since it was so dominant. While the left side holds the two most common characters "e" and "t", the right side contains nearly all the punctuation. I predicted the right characters would hold a greater share, so I was surprised by these results!
+            </p>
+            <img src="./images/tr-words/char_handedness.svg" id="char_handedness">
+            <p>
+                Lastly I wanted to see the the correlation each letter had with word length. Half of this report could be on the boxplot below, but a lengthy write up is hard to justify. I will include a few remarks however.
+            </p>
+            <ul>
+                <li>All letters had a median word length of 6, 7, or 8.</li>
+                <li>All of the outliers at 28 or 29 are due to the two longest words: antidisestablishmentarianism and floccinaucinihilipilification. There were 17 unique letters between these two words.</li>
+                <li>"a" and "i" are the only letters that are also 1-length words. Moreover, "a" had a much tighter spread than "i"</li>
+                <li>While it is inferred from the Longest Words chart above, the lack of words of length 21-27 is curious.</li>
+                <li>The biggest loser was "j." It is tied with "k" for having the smallest median word length of 6, but it also has no words longer than 13 characters.</li>
+            </ul>
+            <img src="./images/tr-words/boxplot_char_length.png" id="boxplot_char_length">
+            
         </section>
 
+        <!----- Section 3: The Process ----->
         <section id="section3" class="written_section">
-            <h2>Section 3: Methodology</h2>
+            <h2>Section 3: The Process</h2>
             <p>
-                proc proc proc proc proc
+                I'd like to use this section to explain the steps of this project at a high level. All my code and data can be found on this <a href= "https://github.com/tradke/typeracer-chars">repository</a>.
+            </p>
+            <p>
+                After finishing the very long winded 5,000 Typeraces project I had several more ideas on the topic that I could not justify including. The scope was already too large, and I learned enough from that first attempt to try something new.
+            </p>
+            <p>
+                The first step was to acquire the raw text from all 5,000 races. This was a great opportunity to learn very basic webscraping. It certainly gets more complicated, but it was very easily done in Python using the BeautifulSoup and Requests modules. I initially tried to scrape the text from the official typeracer website, but it was over 10x faster to get it from <a href="https://typeracerdata.com/texts">typeracerdata.com</a>. This is not surprising at all in hindsight. Additionally, I was likely to run the script more than once, so I included checks to reduce scraping if possible.
+            </p>
+            <p>
+                There was surprisingly little data cleaning to be done. There were exactly 2 texts that were formatted like poems that included a linebreak or carriage return after each line. They snuck through initial testing, but were eventually found and dealt with.
+            </p>
+            <p>
+                Slightly more annoying was properly dividing the raw texts into words. From the beginning I knew this would be impossible to perfect. Abbreviations, phoneticizations, numbers, and obscure proper nouns were most of the problem. Here are some examples of problematic phrases: <em>U.S.A</em>, <em>'don't'</em>, <em>there're</em>, <em>N'yn</em>, <em>3-2-1</em>, <em>-5e-324</em>, and <em>7976931348623157e308</em>. The last two caused me some problems before I found out they were indeed from this <a href="https://typeracerdata.com/text?id=4060107">race</a>. Words surrounded by apostrophes were not uncommon, and they were not easily distinguished from legitimate words starting or ending with an apostrophe. I did not toil over this seemly endless problem for too long. Instead, I let RegEx split words as simply as it could, and then I added some catches for those that slipped through the cracks. Unforunately, this mean't <em>U.S.A</em> would be split into <em>U</em>, <em>S</em>, and <em>A</em>, but I do not believe it significantly degraded the quality of my data. Besides, there is an argument to be made on how <em>U.S.A</em> or <em>-5e-324</em> should be categorized to begin with.
+            </p>
+            <p>
+                Now I had a dictionary with all the typeracer data I would need. My other scripts helped to extract, transform, and organize it to be usable in Excel and Tableau. There's some outputs that didn't get used at all. For example, I counted capitazlied letters before I transformed everything to lowercase. About 25% of alphabetical letters were capitalized, if you were wondering. There's lots of work in the excel sheets that were not fit for presentation for one reason or another.
+            </p>
+            <p>
+                I once again used Excel for reportable information and several of the charts. I've come to like using Excel, and there's lots still to learn. New this time around was the use of Tableau. While I am familiar with the fundamentals (SQL Joins, sheets and dashboard, fields), navigating the app has been quite an experience. And it absolutely needs a dark mode. Nonetheless it is extremely effective. It would have been 10x the work to create the boxplot in Excel. Finally, I am incredibly grateful that tableau was easy to embed in this site. Although, I figured the boxplot would be overly cumbersome to embed, so I uploaded it as a picture instead. These visualizations are pretty novice, but you can find them <a href="https://public.tableau.com/app/profile/tradke">here</a>.
+            </p>
+            <p>
+                In hindsight, the #1 thing I would change would be to add category fields to the characters and words. If they were categorized as ambidextrous, left, or right, I could have done such analysis better, cleaner, and faster.
             </p>
         </section>
         
-
 
     </section>
     <div class="short_break"></div>
