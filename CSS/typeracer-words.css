@@ -72,9 +72,12 @@ p {
     height:auto;
     align-self:center;
 }
-#char_handedness {
+#section2 .div_row img {
     width:300px;
     margin-bottom:24px;
+}
+#section2 #char_fingers {
+    width:450px;
 }
 #boxplot_char_length {
     width:600px;
