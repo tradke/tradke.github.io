@@ -1,3 +1,38 @@
+/* ----- Navigation ----- */
+nav > a {
+    display:block;
+    padding:8px;
+    text-align:center;
+
+    background-color: #404040;
+    border: 1px solid white;
+    border-radius:8px;
+}
+
+#btt-button {
+    position:fixed;
+    top:12px;
+    right:12px;
+    max-width:48px;
+    font-size:16px;
+    text-decoration:none;
+}
+
+#return-home {
+    position:absolute;
+    top:24px;
+    left:24px;
+    font-size:24px;
+    text-decoration:none;
+}
+
+#top {
+    position:absolute;
+    top:0;
+    left:0;
+    border:none;
+}
+
 /* -------------- setup -------------- */
 .short_break {
     height:64px;
@@ -53,30 +88,39 @@ p {
     width:1px;
     height:370px;
     border-right: 2px dashed white;
+    margin-left:24px;
+    margin-right:24px;
+}
+
+/* ------------- section2 -------------*/
+#section2 img {
+    width:800px;
+    height:auto;
+    align-self:center;
+}
+
+#section2 #word_handedness {
+    width:300px;
+}
+
+#section2 .div_row img {
+    width:400px;
+    height:auto;
 }
 
 /* ------------- section1 -------------*/
 #section1 img {
-    width:600px;
     height:auto;
     align-self:center;
 }
 
 #section1 .div_row img {
-    width:400px;
-    height:auto;
-}
-
-/* ------------- section2 -------------*/
-#section2 img {
-    height:auto;
-    align-self:center;
-}
-#section2 .div_row img {
     width:300px;
     margin-bottom:24px;
+    margin-left: 44px;
+    margin-right: 44px;
 }
-#section2 #char_fingers {
+#section1 #char_fingers {
     width:450px;
 }
 #boxplot_char_length {
@@ -85,6 +129,7 @@ p {
 
 ul {
     list-style-type: circle;
+    margin-left:64px;
 }
 ul li {
     font-size:18px;
